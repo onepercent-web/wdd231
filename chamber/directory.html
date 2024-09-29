@@ -33,6 +33,7 @@
             <li><a href="discover.html">Discover</a></li>
         </ul>
         </nav>
+<main>
         <button class="toggle-button" aria-label="toggle dark mode">🌓</button>
        </div>
     </header>
@@ -51,22 +52,32 @@
         <button id="list-view" aria-label="Switch to list view">List View</button>
     </div>
 
+    <!-- Main content -->
     <main>
-    <section class="directory grid-view"> 
-        <article class="business">
-            <h2>Business Name</h2>
-            <p>Address: 123 Main St, Tsukuba, Ibaraki</p>
-            <p>Phone: (029) xxx-xxxx</p>
-            <a href="https://business-website.com">https://business-website.com</a>
-        </article>
-        <!-- Repeat more business listings here -->
-    </section>
+        <!-- Grid view structure -->
+        <div class="grid-view">
+            <!-- JSON data will be dynamically inserted here -->
+        </div>
 
-
-   
-    
-            
+        <!-- List view structure -->
+        <div class="list-view" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- JSON data will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
     </main>
+
+
 
 
 
@@ -86,5 +97,6 @@
         </div>
     </footer>    
     <script src="scripts/chamber.js"></script>
+</main>
 </body>
 </html>

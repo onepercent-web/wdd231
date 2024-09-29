@@ -5,38 +5,52 @@ window.onload = function() {
 };
 
 
-async function loadMembers() {
-    const response = await fetch('data/members.json');
+// Fetch members from JSON file
+async function getMembers() {
+    const response = await fetch('members.json');
     const members = await response.json();
+    displayMembers(members);
+}
 
-    const directorySection = document.querySelector('.directory');
-    directorySection.innerHTML = '';  // Clear existing content
+function displayMembers(members) {
+    const gridContainer = document.querySelector('.grid-view');
+    const listContainer = document.querySelector('.list-view tbody');
 
     members.forEach(member => {
-        const businessCard = document.createElement('article');
-        businessCard.classList.add('business');
-        
-        businessCard.innerHTML = `
-            <h2>${member.name}</h2>
-            <p>Address: ${member.address}</p>
-            <p>Phone: ${member.phone}</p>
+        // Create card for grid view
+        const gridItem = document.createElement('div');
+        gridItem.classList.add('business');
+        gridItem.innerHTML = `
+            <img src="images/${member.image}" alt="${member.name}">
+            <h3>${member.name}</h3>
+            <p>${member.address}</p>
+            <p>${member.phone}</p>
             <a href="${member.website}">${member.website}</a>
         `;
+        gridContainer.appendChild(gridItem);
 
-        directorySection.appendChild(businessCard);
+        // Create row for list view
+        const listItem = document.createElement('tr');
+        listItem.innerHTML = `
+            <td>${member.name}</td>
+            <td>${member.address}</td>
+            <td>${member.phone}</td>
+            <td><a href="${member.website}">${member.website}</a></td>
+        `;
+        listContainer.appendChild(listItem);
     });
 }
 
-loadMembers();
-
-
+// Event listeners for view toggle
 document.getElementById('grid-view').addEventListener('click', () => {
-    document.querySelector('.directory').classList.add('grid-view');
-    document.querySelector('.directory').classList.remove('list-view');
+    document.querySelector('.grid-view').style.display = 'block';
+    document.querySelector('.list-view').style.display = 'none';
 });
 
 document.getElementById('list-view').addEventListener('click', () => {
-    document.querySelector('.directory').classList.add('list-view');
-    document.querySelector('.directory').classList.remove('grid-view');
+    document.querySelector('.grid-view').style.display = 'none';
+    document.querySelector('.list-view').style.display = 'block';
 });
 
+
+getMembers();

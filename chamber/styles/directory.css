@@ -29,6 +29,12 @@ nav a {
     font-size: 1.2em;
 }
 
+.view-toggle {
+    text-align: center;
+
+}
+
+
 .toggle-button {
     background-color: transparent;
     border: none;
@@ -86,8 +92,13 @@ footer p {
     margin: 10px;
     background-color: #f9f9f9;
     display: inline-block;
-    width: 30%; /* 1行に3つのカードが表示される */
+    width: 30%; 
     text-align: center;
+}
+
+.grid-view img {
+    width: 100px;
+    height: auto;
 }
 
 /* List view styles */
@@ -103,11 +114,11 @@ footer p {
     background-color: #f4f4f4;
 }
 
-/* Hide elements based on the view */
-.grid-view .list-view, .list-view .grid-view {
-    display: none;
-}
 
+.list-view a {
+    color: #0000EE;
+    text-decoration: none;
+}
 
 @media (max-width: 768px) {
     .grid-view .business {
