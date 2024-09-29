@@ -5,52 +5,48 @@ window.onload = function() {
 };
 
 
+
 // Fetch members from JSON file
-async function getMembers() {
-    const response = await fetch('members.json');
-    const members = await response.json();
-    displayMembers(members);
-}
+fetch('data/members.json')
+  .then(response => response.json())
+  .then(data => {
+      let gridContainer = document.querySelector('.grid-view');
+      let listContainer = document.querySelector('.list-view tbody');
 
-function displayMembers(members) {
-    const gridContainer = document.querySelector('.grid-view');
-    const listContainer = document.querySelector('.list-view tbody');
+      data.forEach(member => {
+          // Grid View
+          let gridItem = `
+              <div class="business">
+                  <img src="images/${member.image}" alt="${member.name} logo">
+                  <h3>${member.name}</h3>
+                  <p>${member.address}</p>
+                  <p>${member.phone}</p>
+                  <a href="${member.website}" target="_blank">${member.website}</a>
+              </div>`;
+          gridContainer.innerHTML += gridItem;
 
-    members.forEach(member => {
-        // Create card for grid view
-        const gridItem = document.createElement('div');
-        gridItem.classList.add('business');
-        gridItem.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name}">
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <a href="${member.website}">${member.website}</a>
-        `;
-        gridContainer.appendChild(gridItem);
+          // List View
+          let listItem = `
+              <tr>
+                  <td>${member.name}</td>
+                  <td>${member.address}</td>
+                  <td>${member.phone}</td>
+                  <td><a href="${member.website}" target="_blank">${member.website}</a></td>
+              </tr>`;
+          listContainer.innerHTML += listItem;
+      });
+  })
+  .catch(error => console.error('Error fetching the data:', error));
 
-        // Create row for list view
-        const listItem = document.createElement('tr');
-        listItem.innerHTML = `
-            <td>${member.name}</td>
-            <td>${member.address}</td>
-            <td>${member.phone}</td>
-            <td><a href="${member.website}">${member.website}</a></td>
-        `;
-        listContainer.appendChild(listItem);
-    });
-}
 
-// Event listeners for view toggle
-document.getElementById('grid-view').addEventListener('click', () => {
+
+  document.getElementById('grid-view').addEventListener('click', function () {
     document.querySelector('.grid-view').style.display = 'block';
     document.querySelector('.list-view').style.display = 'none';
 });
 
-document.getElementById('list-view').addEventListener('click', () => {
+document.getElementById('list-view').addEventListener('click', function () {
     document.querySelector('.grid-view').style.display = 'none';
     document.querySelector('.list-view').style.display = 'block';
 });
 
-
-getMembers();

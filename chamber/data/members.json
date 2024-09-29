@@ -4,7 +4,7 @@
       "address": "1-1-1 Tsukuba, Ibaraki",
       "phone": "(029) 555-1111",
       "website": "https://www.tsukubaphoneshop.com",
-      "image": "tsukubaphoneshop.jpg",
+      "image": "https://onepercent-web.github.io/wdd231/chamber/images/shop.webp", 
       "membershipLevel": 1,
       "description": "A specialty store for mobile phones, offering the latest smartphones and accessories at competitive prices."
     },
@@ -13,7 +13,7 @@
       "address": "8-5-1 Tsukuba, Ibaraki",
       "phone": "(029) 876-5435",
       "website": "https://www.sakurabakery.com",
-      "image": "sakurabakery.jpg",
+      "image": "https://onepercent-web.github.io/wdd231/chamber/images/shop.webp", 
       "membershipLevel": 2,
       "description": "Local bakery famous for its pretty appearance and bread made with cherry blossoms."
     },
@@ -22,7 +22,7 @@
       "address": "1-1-2 Tsukuba, Ibaraki",
       "phone": "(029) 998-1234",
       "website": "https://www.aoi-fitness.com",
-      "image": "aoi-fitness.jpg",
+      "image": "https://onepercent-web.github.io/wdd231/chamber/images/shop.webp", 
       "membershipLevel": 3,
       "description": "It has the latest training machines and offering personal training and Yoga programs for of all ages."
     },
@@ -31,7 +31,7 @@
       "address": "8-6-6 Tsukuba, Ibaraki",
       "phone": "(029) 781-2384",
       "website": "https://www.tsukuba-fishing.com",
-      "image": "tsukuba-fishing.jpg",
+      "image": "/images/tsukuba_phone_shop.jpg", 
       "membershipLevel": 3,
       "description": "High quality fishing gear, from beginner to professional equipment, perfect for fishing lover."
     },
@@ -40,7 +40,7 @@
       "address": "5-5-5 Tsukuba, Ibaraki",
       "phone": "(029) 654-2901",
       "website": "http://www.tsukuba-appliance.com",
-      "image": "tsukuba-appliance.png",
+      "image": "https://onepercent-web.github.io/wdd231/chamber/images/shop.webp", 
       "membershipLevel": 1,
       "description": "A large appliance store that carries a variety of home appliances imported from abroad as well as domestically produced products."
     },
@@ -49,7 +49,7 @@
       "address": "2-4-6 Tsukuba, Ibaraki",
       "phone": "(029) 567-7891",
       "website": "http://www.tsukubafruitcafe.com",
-      "image": "tsukubafruitcafe.png",
+      "image": "https://onepercent-web.github.io/wdd231/chamber/images/shop.webp", 
       "membershipLevel": 2,
       "description": "The restaurant is well known for its desserts made with fresh, organically grown fruits."
     },
@@ -58,7 +58,7 @@
       "address": "7-9-9 Tsukuba, Ibaraki",
       "phone": "(029) 389-1121",
       "website": "http://www.tsukubaconstruction.com",
-      "image": "tsukubaconstruction.png",
+      "image": "https://onepercent-web.github.io/wdd231/chamber/images/shop.webp", 
       "membershipLevel": 1,
       "description": "Creating earthquake-resistant commercial and residential construction projects for the safety and comfort of local residents."
     }
