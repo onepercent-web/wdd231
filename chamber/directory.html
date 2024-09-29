@@ -7,12 +7,14 @@
     <meta name="description" content="WDD 231 - Chamber Directory Page ">
     <meta name="author" content="Eimi Miyake">
     <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
 
 
     <meta property="og:title" content="Tsukuba Chamber of Commerce Directory Page">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="https://onepercent-web.github.io/wdd231/">
+    <meta property="og:image" content="https://onepercent-web.github.io/wdd231/images/logo.jpg">
     <meta property="og:url" content="https://onepercent-web.github.io/wdd231/chamber/directory.html">
 
 
@@ -24,33 +26,46 @@
             <span class="title">Tsukuba Chamber of Commerce</span>
 
         <nav>
-            <ul class="nav-links">
-            <a href="home.html">Home</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
-            <a href="discover.html">Discover</a>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
         </ul>
         </nav>
         <button class="toggle-button" aria-label="toggle dark mode">🌓</button>
        </div>
     </header>
+
+    <section class="hero">
+        <img src="images/tsukuba3.jpg" alt="Hero image of Tsukuba Chamber of Commerce" class="hero-image">
+        <div class="hero-text">
+            <h1>Welcome to the Tsukuba Chamber of Commerce</h1>
+            <p>Connecting businesses and fostering growth in the community.</p>
+        </div>
+    </section>
+
+    <!-- View Toggle Buttons -->
+    <div class="view-toggle">
+        <button id="grid-view" aria-label="Switch to grid view">Grid View</button>
+        <button id="list-view" aria-label="Switch to list view">List View</button>
+    </div>
+
     <main>
-        <section class="directory">
-            <section class="directory">
-                <article class="business">
-                    <h2>Business Name 1</h2>
-                    <p>Address: 123 Main St, City, State</p>
-                    <p>Phone: (123) 456-7890</p>
-                </article>
-                <article class="business">
-                    <h2>Business Name 2</h2>
-                    <p>Address: 456 Oak St, City, State</p>
-                    <p>Phone: (987) 654-3210</p>
-                </article>
-                <!-- 他のビジネスもここに追加 -->
-            </section>
+    <section class="directory grid-view"> 
+        <article class="business">
+            <h2>Business Name</h2>
+            <p>Address: 123 Main St, Tsukuba, Ibaraki</p>
+            <p>Phone: (029) xxx-xxxx</p>
+            <a href="https://business-website.com">https://business-website.com</a>
+        </article>
+        <!-- Repeat more business listings here -->
+    </section>
+
+
+   
+    
             
-        </section>
     </main>
 
 
@@ -70,5 +85,6 @@
             </a>
         </div>
     </footer>    
+    <script src="scripts/chamber.js"></script>
 </body>
 </html>

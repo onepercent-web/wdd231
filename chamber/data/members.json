@@ -1,0 +1,59 @@
+[
+    {
+      "name": "Business 1",
+      "address": "123 Main St, Tsukuba, Ibaraki",
+      "phone": "(029) xxx-xxxx",
+      "website": "https://business1.com",
+      "image": "business1.jpg",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Business 2",
+      "address": "456 Side St, Tsukuba, Ibaraki",
+      "phone": "(029) yyy-yyyy",
+      "website": "https://business2.com",
+      "image": "business2.jpg",
+      "membershipLevel": 2
+    },
+    {
+        "name": "Business 2",
+        "address": "456 Side St, Tsukuba, Ibaraki",
+        "phone": "(029) yyy-yyyy",
+        "website": "https://business2.com",
+        "image": "business2.jpg",
+        "membershipLevel": 2
+      },
+      {
+        "name": "Business 2",
+        "address": "456 Side St, Tsukuba, Ibaraki",
+        "phone": "(029) yyy-yyyy",
+        "website": "https://business2.com",
+        "image": "business2.jpg",
+        "membershipLevel": 2
+      },
+      {
+        "name": "Business 2",
+        "address": "456 Side St, Tsukuba, Ibaraki",
+        "phone": "(029) yyy-yyyy",
+        "website": "https://business2.com",
+        "image": "business2.jpg",
+        "membershipLevel": 2
+      },
+      {
+        "name": "Business 2",
+        "address": "456 Side St, Tsukuba, Ibaraki",
+        "phone": "(029) yyy-yyyy",
+        "website": "https://business2.com",
+        "image": "business2.jpg",
+        "membershipLevel": 2
+      },
+      {
+        "name": "Business 2",
+        "address": "456 Side St, Tsukuba, Ibaraki",
+        "phone": "(029) yyy-yyyy",
+        "website": "https://business2.com",
+        "image": "business2.jpg",
+        "membershipLevel": 2
+      }
+
+  ]
