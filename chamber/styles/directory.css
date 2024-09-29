@@ -3,13 +3,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 2%;
     background-color: #ffef11;
+    font-size: 25px;
+
 }
 
+body {
+    text-align: center;
+}
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
 }
 
 .title {
