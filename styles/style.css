@@ -18,23 +18,8 @@ body {
     padding-left: 5%;
 }
 
-.profile {
-    width: 200px;
-    height: auto;
-    padding-left: 20%;
-}
 
-header {
-    font-family: "Bungee Outline", sans-serif;
-    font-size: 50px;
-    background-color: #000000;
-    padding: 1%;
-}
 
-header img{
-    width: 20%; 
-    height: auto; 
-}
 
 h2 {
     background-color: #000000; 
@@ -84,24 +69,58 @@ main {
     margin: 0 auto;
 }
 
+/* Header styling */
+.main-header {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Bungee Outline", sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.profile {
+    width: 100px;
+    height: 130px;
+}
+
+.title {
+    font-size: 2em;
+    color: #ffffff;
+    margin-left: 20px;
+}
 
 nav {
     display: flex;
     justify-content: space-around;
-    background: #ffef11;
+    font-size: 20px;
 }
 
-nav a {
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.nav-links li a:hover {
+    text-decoration: none;
+    background-color: #ffffff;
     color: #000000;
-    text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: underline;
-    text-decoration: none;
-    color: rgb(93, 93, 93);
-
-}
 
 footer {
     text-align: center;
