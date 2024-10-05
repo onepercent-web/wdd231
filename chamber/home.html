@@ -3,18 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
+    <title>Tsukuba Chamber of Commerce Directory Page</title>
+    <meta name="description" content="WDD 231 - Chamber Directory Page ">
+    <meta name="author" content="Eimi Miyake">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+
+
+    <meta property="og:title" content="Tsukuba Chamber of Commerce Directory Page">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://onepercent-web.github.io/wdd231/images/logo.jpg">
+    <meta property="og:url" content="https://onepercent-web.github.io/wdd231/chamber/directory.html">
+
+
 </head>
 <body>
     <header>
-        <img src="images/" alt="">
-        <span class="page-name">Tsukuba Chamber of Commerce</span>
+        <div class="header-container">
+            <img class="logo" src="images/logo.jpg" width="34" height="40" alt="tsukuba-view">
+            <span class="title">Tsukuba Chamber of Commerce</span>
 
-
+        <nav>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+        </nav>
+        <button class="toggle-button" aria-label="toggle dark mode">🌓</button>
+       </div>
     </header>
-    
 
+    <section class="hero">
+        <img src="images/tsukuba3.jpg" alt="Hero image of Tsukuba Chamber of Commerce" class="hero-image">
+        <h1>Welcome to the Tsukuba Chamber of Commerce</h1>
+        <h2>Connecting businesses and fostering growth in the community.</h2>
+        <a href="#" class="cta-button">Keynote Tickets</a>
+    </section>
+
+
+    <!-- Main content -->
+    <main>
+
+
+        <!-- event section 内容変えてねーーー-->
+        <section class="events">
+            <h3>Upcoming Events</h3>
+            <div class="event-card">
+                <h4>Networking Event</h4>
+                <p>Date: October 15, 2024</p>
+                <p>Join us for an evening of networking and collaboration.</p>
+                <a href="#" class="event-link">More Info</a>
+            </div>
+            <div class="event-card">
+                <h4>Business Workshop</h4>
+                <p>Date: November 5, 2024</p>
+                <p>Learn the latest strategies for business growth.</p>
+                <a href="#" class="event-link">More Info</a>
+            </div>
+        </section>
+
+
+       <!-- 天気セクション -->
+       <section class="weather">
+        <h3>Current Weather</h3>
+        <div class="current-weather">
+            <p>Temperature: <span id="temperature"></span></p>
+            <p>Description: <span id="description"></span></p>
+            <p><span id="humidity"></span></p>
+            <p><span id="sunrise"></span></p>
+            <p><span id="sunset"></span></p>
+        </div>
+        <h4>Weather Forecast</h4>
+        <div class="forecast">
+            <p>Today: <span id="day1-temp">90°F</span></p>
+            <p>Wednesday: <span id="day2-temp">89°F</span></p>
+            <p>Thursday: <span id="day3-temp">68°F</span></p>
+        </div>
+    </section>
+
+    <!-- 会社のスポットライトセクション -->
+    <section class="spotlight-section">
+        <h3>Featured Businesses</h3>
+        <!-- メンバー情報はJavaScriptで動的に挿入されます -->
+    </section>
+
+
+
+</main>
 
 
     <footer>
@@ -32,5 +111,7 @@
             </a>
         </div>
     </footer>    
+    <script src="scripts/home.js"></script>
+
 </body>
 </html>

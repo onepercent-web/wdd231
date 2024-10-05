@@ -50,3 +50,4 @@ document.getElementById('list-view').addEventListener('click', function () {
     document.querySelector('.list-view').style.display = 'block';
 });
 
+

@@ -3,13 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tsukuba Chamber of Commerce Directory Page</title>
+    <meta name="description" content="WDD 231 - Chamber Directory Page ">
+    <meta name="author" content="Eimi Miyake">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+
+
+    <meta property="og:title" content="Tsukuba Chamber of Commerce Directory Page">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://onepercent-web.github.io/wdd231/images/logo.jpg">
+    <meta property="og:url" content="https://onepercent-web.github.io/wdd231/chamber/directory.html">
+
+
 </head>
+
 <body>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="images/logo.jpg" width="34" height="40" alt="tsukuba-view">
+            <span class="title">Tsukuba Chamber of Commerce</span>
+
+        <nav>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+        </nav>
+        <button class="toggle-button" aria-label="toggle dark mode">🌓</button>
+       </div>
+    </header>
+
+    <section class="hero">
+        <img src="images/tsukuba3.jpg" alt="Hero image of Tsukuba Chamber of Commerce" class="hero-image">
+        <h1>Welcome to the Tsukuba Chamber of Commerce</h1>
+        <h2>Connecting businesses and fostering growth in the community.</h2>
+        <a href="#" class="cta-button">Keynote Tickets</a>
+    </section>
+
     
 
-
-
+    <!-- Main content -->
+    
+    
     <footer>
         <p>&copy; <span id="currentyear"></span> Eimi Miyake Japan</p>
         <p id="lastModified"></p>
@@ -25,5 +65,7 @@
             </a>
         </div>
     </footer>    
+    <script src="scripts/chamber.js"></script>
+
 </body>
 </html>

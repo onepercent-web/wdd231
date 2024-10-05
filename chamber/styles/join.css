@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    background-color: #ffef11;
+    font-size: 25px;
+}
+
+
+
+body {
+    line-height: 2.2;
+}
+
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2em;
+}
+
+
+
+
+.view-toggle {
+    text-align: center;
+}
+
+
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    color: #888;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #000000;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+/* footer */
+.social img {
+    width: 50px;
+    height: 50px;
+    padding: 2%;
+}
+#lastModified {
+    color: white;
+}
+
+
+.member-card {
+    border: 1px solid #ffef11;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+.grid-view .business {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    display: inline-block;
+    width: 30%; 
+    text-align: center;
+}
+
+
+.grid-view img {
+    width: 100px;
+    height: auto;
+}
+
+/* List view styles */
+.list-view table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.list-view th, .list-view td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.list-view th {
+    background-color: #f4f4f4;
+}
+
+
+.list-view a {
+    color: #0000EE;
+    text-decoration: none;
+}
+

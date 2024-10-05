@@ -1,4 +1,10 @@
-/* Header styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -6,12 +12,14 @@
     padding: 2%;
     background-color: #ffef11;
     font-size: 25px;
-
 }
+
+
 
 body {
-    text-align: center;
+    line-height: 2.2;
 }
+
 
 .logo {
     width: 120px;
@@ -35,9 +43,11 @@ nav a {
     font-size: 1.2em;
 }
 
+
+
+
 .view-toggle {
     text-align: center;
-
 }
 
 
@@ -127,28 +137,3 @@ footer p {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
-    .grid-view .business {
-        width: 100%; 
-        margin: 10px 5px; 
-    }
-
-nav ul {
-    flex-direction: column; 
-    gap: 10px; 
-    padding-left: 0;  
-    align-items: center;  
-}
-
-nav ul li {
-    width: 100%;  
-    text-align: center; 
-}
-
-nav a {
-    display: block;  
-    padding: 10px 0; 
-    width: 100%;  
-}
-
-}
