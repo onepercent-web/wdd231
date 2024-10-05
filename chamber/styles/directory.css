@@ -1,3 +1,5 @@
+/* header */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,16 +17,17 @@
 }
 
 
-
 body {
     line-height: 2.2;
+    background-color: #ffffff;
+    font-size: 25px;
 }
-
 
 .logo {
     width: 120px;
     height: 120px;
 }
+
 
 .title {
     font-size: 1.5em;
@@ -43,55 +46,52 @@ nav a {
     font-size: 1.2em;
 }
 
-
-
-
-.view-toggle {
-    text-align: center;
-}
-
-
-.toggle-button {
-    background-color: transparent;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-.toggle-button:hover {
-    color: #888;
-}
-
 .hero {
+    position: relative;
+    margin: 20px 0;
     text-align: center;
 }
 
 .hero img {
     width: 100%;
+}
 
+.cta-button {
+    position: absolute;
+    bottom: 350px;
+    right: 50px;
+    margin: 0;
+    background-color: #000000; 
+    color:  #ffffff;
+    padding: 20px 40px;
+    border-radius: 60px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.cta-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* List view styles */
+.list-view table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.list-view th, .list-view td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.list-view th {
+    background-color: #f4f4f4;
 }
 
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #000000;
+.list-view a {
+    color: #0000EE;
+    text-decoration: none;
 }
-
-footer p {
-    color: #ffffff;
-}
-
-/* footer */
-.social img {
-    width: 50px;
-    height: 50px;
-    padding: 2%;
-}
-#lastModified {
-    color: white;
-}
-
 
 .member-card {
     border: 1px solid #ffef11;
@@ -118,22 +118,36 @@ footer p {
     height: auto;
 }
 
-/* List view styles */
-.list-view table {
-    width: 100%;
-    border-collapse: collapse;
+
+
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #000000;
 }
-.list-view th, .list-view td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+
+footer p {
+    color: #ffffff;
 }
-.list-view th {
-    background-color: #f4f4f4;
+
+.social {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    margin: auto;
+    padding: 2%;
+}
+
+.social a {
+    margin: 0 10px;
 }
 
 
-.list-view a {
-    color: #0000EE;
-    text-decoration: none;
+#lastModified {
+    color: white;
 }
 

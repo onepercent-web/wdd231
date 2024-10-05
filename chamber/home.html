@@ -45,72 +45,73 @@
     </section>
 
 
-    <!-- Main content -->
-    <main>
+    <main class="card-container">
 
-
-        <!-- event section 内容変えてねーーー-->
+        <!-- Event Section -->
         <section class="events">
+          <div class="event-card">
             <h3>Upcoming Events</h3>
-            <div class="event-card">
-                <h4>Networking Event</h4>
-                <p>Date: October 15, 2024</p>
-                <p>Join us for an evening of networking and collaboration.</p>
-                <a href="#" class="event-link">More Info</a>
-            </div>
-            <div class="event-card">
-                <h4>Business Workshop</h4>
-                <p>Date: November 5, 2024</p>
-                <p>Learn the latest strategies for business growth.</p>
-                <a href="#" class="event-link">More Info</a>
-            </div>
+            <h4>Restaurant Startup Seminar</h4>
+            <p>Date: October 20, 2024</p>
+            <p>Learn the essentials of starting and running your own restaurant business.</p>
+            <a href="#" class="event-link">More Info</a>
+            
+            <h4>Environment Study Workshop</h4>
+            <p>Date: November 2, 2024</p>
+            <p>A workshop focused on learning about and preserving the natural environment.</p>
+            <a href="#" class="event-link">More Info</a>
+          </div>
         </section>
-
-
-       <!-- 天気セクション -->
-       <section class="weather">
-        <h3>Current Weather</h3>
-        <div class="current-weather">
+      
+        <!-- Weather Section -->
+        <section class="weather">
+          <div class="weather-card">
+            <h3>Current Weather</h3>
             <p>Temperature: <span id="temperature"></span></p>
             <p>Description: <span id="description"></span></p>
-            <p><span id="humidity"></span></p>
-            <p><span id="sunrise"></span></p>
-            <p><span id="sunset"></span></p>
-        </div>
-        <h4>Weather Forecast</h4>
-        <div class="forecast">
-            <p>Today: <span id="day1-temp">90°F</span></p>
-            <p>Wednesday: <span id="day2-temp">89°F</span></p>
-            <p>Thursday: <span id="day3-temp">68°F</span></p>
-        </div>
-    </section>
-
-    <!-- 会社のスポットライトセクション -->
-    <section class="spotlight-section">
-        <h3>Featured Businesses</h3>
-        <!-- メンバー情報はJavaScriptで動的に挿入されます -->
-    </section>
-
-
-
-</main>
+            <p>Humidity: <span id="humidity"></span></p>
+            <p>Sunrise: <span id="sunrise"></span></p>
+            <p>Sunset: <span id="sunset"></span></p>
+          </div>
+          
+          <div class="weather-card">
+            <h3>Weather Forecast</h3>
+            <p>Today: <span id="day1-temp"></span></p>
+            <p>Tomorrow: <span id="day2-temp"></span></p>
+            <p>Day after tomorrow: <span id="day3-temp"></span></p>
+          </div>
+        </section>
+      
+        <!-- Spotlight Section -->
+        <section class="spotlight-section">
+          <h3>Featured Businesses</h3>
+          <div class="business-card-container">
 
 
-    <footer>
-        <p>&copy; <span id="currentyear"></span> Eimi Miyake Japan</p>
-        <p id="lastModified"></p>
-        <div class="social">
-            <a href="https://www.youtube.com" target="_blank">
-                <img src="images/youtube.webp" alt="youtube icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.webp" alt="twitter icon">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank">
-                <img src="images/in.webp" alt="linkedin icon">
-            </a>
-        </div>
-    </footer>    
+          </div>
+        </section>
+      
+      </main>
+      
+
+
+<footer>
+    <p>&copy; <span id="currentyear"></span> Eimi Miyake Japan</p>
+    <p id="lastModified"></p>
+
+    <div class="social">
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="images/youtube.webp"youtube icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.webp" alt="twitter icon">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <img src="images/in.webp" alt="linkedin icon">
+        </a>
+    </div>
+</footer>  
+
     <script src="scripts/home.js"></script>
 
 </body>

@@ -19,16 +19,7 @@
 
 body {
     line-height: 2.2;
-    font-family: Arial, sans-serif;
-}
-
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2%;
-    background-color: #ffef11;
+    background-color: #ffffff;
     font-size: 25px;
 }
 
@@ -56,79 +47,149 @@ nav a {
 }
 
 .hero {
+    position: relative;
+    margin: 20px 0;
     text-align: center;
 }
 
 .hero img {
     width: 100%;
-
 }
 
 .cta-button {
-    background-color: #ff6600;
-    color: white;
-    padding: 10px 20px;
+    position: absolute;
+    bottom: 350px;
+    right: 50px;
+    margin: 0;
+    background-color: #000000; 
+    color:  #ffffff;
+    padding: 20px 40px;
+    border-radius: 60px;
     text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    margin-top: 10px;
+    font-size: 30px;
 }
 
 .cta-button:hover {
-    background-color: #ff4500;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 /* main */
-
-/* events */
-
-.events {
+.card-container {
+    display: flex;
+    justify-content: space-between;
     margin: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 2%;
 }
 
+/* Event and Weather Cards */
 .event-card {
-    background-color: #f9f9f9;
+    width: 800px;
+    background-color:  #ffef11;
     padding: 20px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 4px solid #000000;
+    border-radius: 15px;
+    flex: 1;
+    margin: 0; 
+    font-size: 30px;
+    margin-top: 2%;
 }
 
-/* weather */
+.weather-card {
+width: 700px;
+background-color:  #ffef11;
+padding: 20px;
+border: 4px solid #000000;
+border-radius: 15px;
+flex: 1;
+margin: 0; 
+font-size: 30px;
+margin: 2%;
+}
+
+
+.event-card h3, .weather-card h3, .event-card p, .weather-card p {
+    margin: 5px 0; 
+}
 
 .weather {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px; 
 }
+
+/* Spotlight section */
+
 
 .spotlight-section {
+    margin-top: 50px;
+}
+
+.business-card-container {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-/* spotlight */
-
+/* Business Cards */
 .business-card {
-    border: 1px solid #ccc;
+    background-color: #ffef11; 
     padding: 20px;
+    border: 4px solid #000000; 
+    border-radius: 15px;
+    flex: 1 0 30%; 
     text-align: center;
-    width: 30%;
+    margin: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth hover effect */
 }
 
+
+
+.spotlight-section h3 {
+    text-align: center;
+    font-size: 50px;
+    padding: 2%;
+}
+/* Business Card Content */
 .business-card img {
-    width: 100px;
+    width: 500px;
     height: auto;
+    margin: 2%;
+}
+
+.business-card h3 {
+    color: #000000; 
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.business-card p {
+    color: #333333; 
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 .business-card a {
-    display: block;
-    margin-top: 10px;
-    color: blue;
-    text-decoration: underline;
+    color:  #000000;/* Yellow link color */
+    font-size: 2.0em;
+    font-weight: bold;
 }
+
+.business-card:hover {
+    transform: scale(1.05); 
+}
+
+
 
 /* footer */
 
 footer {
+    margin-top: 2%;
     text-align: center;
     padding: 10px 0;
     background: #000000;
@@ -138,63 +199,37 @@ footer p {
     color: #ffffff;
 }
 
-.social img {
-    width: 50px;
-    height: 50px;
+.social {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    margin: auto;
     padding: 2%;
 }
+
+.social a {
+    margin: 0 10px;
+}
+
+
 #lastModified {
     color: white;
 }
 
 
-.member-card {
-    border: 1px solid #ffef11;
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    width: 30%;
-    text-align: center;
-}
 
-.grid-view .business {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin: 10px;
-    background-color: #f9f9f9;
-    display: inline-block;
-    width: 30%; 
-    text-align: center;
-}
-
-
-.grid-view img {
-    width: 100px;
-    height: auto;
-}
-
-/* List view styles */
-.list-view table {
-    width: 100%;
-    border-collapse: collapse;
-}
-.list-view th, .list-view td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-.list-view th {
-    background-color: #f4f4f4;
-}
-
-
-.list-view a {
-    color: #0000EE;
-    text-decoration: none;
-}
-
-
-
-@media (max-width: 480px) {
+/* Responsive design */
+@media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+    }
+  
+    .event-card,
+    .weather-card,
+    .business-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
 
     .nav-links {
         display: none; 
@@ -218,45 +253,6 @@ footer p {
         font-size: 1.2em;
     }
 
-    /* events */
-    .events {
-        margin: 10px;
-    }
-
-    .event-card {
-        margin-bottom: 10px;
-        padding: 10px;
-        background-color: #f9f9f9;
-    }
-
-    /* weather */
-    .weather {
-        margin: 10px;
-    }
-
-    .current-weather p {
-        font-size: 1em;
-        margin: 5px 0;
-    }
-
-    /* spotlight */
-    .spotlight-section {
-        display: block;
-        text-align: center;
-    }
-
-    .business-card {
-        width: 100%;
-        margin-bottom: 10px;
-        padding: 10px;
-        border: 1px solid #ccc;
-    }
-
-    .business-card img {
-        width: 80px;
-        height: auto;
-        margin-bottom: 10px;
-    }
 
     footer {
         padding: 20px;
@@ -294,4 +290,5 @@ footer p {
         width: 100%;
         margin: 10px 5px;
     }
+
 }

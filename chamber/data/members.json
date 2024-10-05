@@ -30,8 +30,8 @@
       "name": "Tsukuba Fishing Tackle Shop",
       "address": "8-6-6 Tsukuba, Ibaraki",
       "phone": "(029) 781-2384",
-      "website": "https://www.tsukuba-fishing.com",
-      "image": "/images/tsukuba_phone_shop.jpg", 
+      "website": "http://www.tsukuba-fishingtackleshop.com",
+      "image": "https://onepercent-web.github.io/wdd231/chamber/images/shop.webp", 
       "membershipLevel": 3,
       "description": "High quality fishing gear, from beginner to professional equipment, perfect for fishing lover."
     },
