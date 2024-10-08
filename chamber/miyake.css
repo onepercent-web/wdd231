@@ -1,0 +1,456 @@
+/* header */
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+ 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffef11;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Isso ajuda a empurrar os itens para as extremidades */
+    width: 100%; /* Garante que o container ocupe a largura total */
+}
+
+
+.header-container img {
+    margin-right: 15px;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.header-container h1:first-child {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.header-container h1:last-child {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.nav-links.open {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFAB91;
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #002922;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #ffffff;
+}
+
+.nav-links a.active {
+    background-color: #f5f5f5;
+    color: #000000;
+    font-weight: bold;
+    border-bottom: 2px solid #002922;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+ 
+.menu-icon {
+    width: 35px;
+    height: 4px;
+    background-color: #002c24;
+    transition: all 0.3s;
+}
+ 
+.menu-button.active .menu-icon:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+ 
+.menu-button.active .menu-icon:nth-child(2) {
+    opacity: 0;
+}
+ 
+.menu-button.active .menu-icon:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+body {
+    line-height: 2.2;
+    background-color: #ffffff;
+    font-size: 25px;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+ 
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+ 
+.hero {
+    position: relative;
+    margin: 20px 0;
+    text-align: center;
+}
+ 
+.hero img {
+    width: 100%;
+}
+ 
+.cta-button {
+    position: absolute;
+    bottom: 350px;
+    right: 50px;
+    margin: 0;
+    background-color: #000000;
+    color:  #ffffff;
+    padding: 20px 40px;
+    border-radius: 60px;
+    text-decoration: none;
+    font-size: 30px;
+}
+ 
+.cta-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+ 
+.cards-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: #ffef11;
+    border: 1px solid #FFAB91;
+    border-radius: 8px;
+    padding: 10px;
+    width: 48%;
+    max-width: 500px; /* Limita a largura máxima do card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-header {
+    background-color: #c773599a;
+    color: #00201a;
+    font-weight: bold;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.event-list {
+    list-style-type: none;
+    padding: 10px;
+}
+
+
+.weather-container .card {
+    width: 48%; /* Faz com que as seções de clima e previsão ocupem metade da largura */
+}
+/* Weather Card Styling */
+.weather-card, .data.card, .weather.card {
+    background-color: #ffef11;
+    padding: 20px;
+    border: 4px solid #000000;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 800px; /* Optional: adjust width based on your design */
+    margin: 20px; /* Space between cards */
+    font-size: 1.2em; /* Adjust as needed */
+    text-align: center;
+    justify-content: space-between;
+    flex: 1 1 100%;
+}
+ 
+/* List Styling for Weather Details */
+.weather-content ul, .weather ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+.weather-content ul li, .weather ul li {
+    margin: 5px 0;
+    font-size: 1em;
+}
+ 
+/* Icon Styling */
+.weather-icon {
+    display: block;
+    margin: 10px auto;
+    width: 80px; /* Adjust as needed */
+    height: auto;
+}
+
+.event-card h3, .weather-card h3, .event-card p, .weather-card p {
+    margin: 5px 0;
+}
+ 
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Se você quiser ajustar ainda mais os itens */
+.weather.card ul li{
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding da lista */
+    margin: 0; /* Remove a margem da lista */
+    display: flex;
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 1em; /* Adiciona um espaço interno */
+}
+
+
+.spotlight-section {
+    margin-top: 40px 0;
+}
+ 
+.business-card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+ 
+.business-card {
+    background-color: #ffef11;
+    padding: 20px;
+    border: 4px solid #000000;
+    border-radius: 15px;
+    flex: 1 0 30%;
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth hover effect */
+}
+ 
+.spotlight-section h3 {
+    text-align: center;
+    font-size: 50px;
+    padding: 2%;
+}
+/* Business Card Content */
+.business-card img {
+    width: 500px;
+    height: auto;
+    margin: 2%;
+}
+ 
+.business-card h3 {
+    color: #000000;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+ 
+.business-card p {
+    color: #333333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+ 
+.business-card a {
+    color:  #000000;/* Yellow link color */
+    font-size: 2.0em;
+    font-weight: bold;
+}
+ 
+.business-card:hover {
+    transform: scale(1.05);
+}
+ 
+/* footer */
+ 
+footer {
+    margin-top: 2%;
+    text-align: center;
+    padding: 10px 0;
+    background: #000000;
+}
+ 
+footer p {
+    color: #ffffff;
+}
+ 
+.social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 2%;
+}
+ 
+.social a {
+    margin: 0 10px;
+}
+ 
+ 
+#lastModified {
+    color: white;
+}
+ 
+/* Responsive design */
+@media (max-width: 700px) {
+    .card-container {
+      flex-direction: column;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+ 
+    .nav-links {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+ 
+    /* When the open class is added, the links will be displayed */
+    .nav-links.open {
+        display: flex;
+    }
+ 
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+ 
+    .hero img {
+        width: 100%;
+    }
+ 
+    
+    .cta-button {
+        display: block;
+        margin: 10px auto;
+        padding: 10px;
+        font-size: 1.2em;
+    }
+ 
+ 
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+ 
+    footer p {
+        font-size: 0.9em;
+    }
+ 
+    .social img {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+ 
+ 
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+ 
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+ 
+    nav a {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+    }
+ 
+    .grid-view .business {
+        width: 100%;
+        margin: 10px 5px;
+    }
+
+    .weather-container {
+        flex-direction: column; /* Alinha os cards verticalmente em telas pequenas */
+    }
+
+    .weather-container .card {
+        width: 100%; /* Faz o card ocupar 100% da largura em telas pequenas */
+        margin-bottom: 20px; /* Adiciona espaçamento abaixo */
+    }
+
+    .event-card,
+    .weather-card,
+    .business-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+ 
+}

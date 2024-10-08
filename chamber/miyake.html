@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsukuba Chamber of Commerce Directory Page</title>
+    <meta name="description" content="WDD 231 - Chamber Directory Page ">
+    <meta name="author" content="Eimi Miyake">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/miyake.css">
+    <link rel="stylesheet" href="styles/miyake.css">
+    <meta property="og:title" content="Tsukuba Chamber of Commerce Directory Page">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://onepercent-web.github.io/wdd231/images/logo.jpg">
+    <meta property="og:url" content="https://onepercent-web.github.io/wdd231/chamber/directory.html">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <img src="miyakeimages/画像 (1).webp" width="34" height="40" alt="tsukuba-view" loading="lazy">            
+                <div>
+                    <h1>Tsukuba</h1>
+                    <h1>chamber of commerce</h1>
+                </div>
+                <button id="menu" class="menu-button" aria-expanded="false" aria-controls="navigation" aria-label="Toggle navigation">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                </button>
+                <nav class="nav-links" id="navigation" role="navigation" aria-hidden="true">
+                    <div class="box">
+                        <a href="home.html" tabindex="0">Home</a>
+                    </div>
+                    <div class="box">
+                        <a href="directory.html" tabindex="0">Directory</a>
+                    </div>
+                    <div class="box">
+                        <a href="join.html" tabindex="0">Join</a>
+                    </div>
+                    <div class="box">
+                        <a href="discover.html" tabindex="0">Discover</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="card-container">
+            <section class="hero">
+                <img src="miyakeimages/画像.webp" alt="Hero image of Tsukuba Chamber of Commerce" loading="lazy" class="hero-image">
+                <h1>Welcome to the Tsukuba Chamber of Commerce</h1>
+                <h2>Connecting businesses and fostering growth in the community.</h2>
+                <a href="#" class="cta-button">Keynote Tickets</a>
+            </section>
+        
+            <div class="cards-container">
+                <aside class="event-card card">
+                    <div class="card-header">Upcoming Events</div>
+                    <ul class="event-list">
+                        <h3>Upcoming Events</h3>
+                        <h4>Restaurant Startup Seminar</h4>
+                        <p>Date: October 20, 2024</p>
+                        <p>Learn the essentials of starting and running your own restaurant business.</p>
+                        <a href="#" class="event-link">More Info</a>
+                    </ul>
+                    <ul>
+                        <h4>Environment Study Workshop</h4>
+                        <p>Date: November 2, 2024</p>
+                        <p>A workshop focused on learning about and preserving the natural environment.</p>
+                        <a href="#" class="event-link">More Info</a>
+                    </ul>
+                </aside>
+            </div>
+        
+            <div class="weather-container">
+                <section class="data card">
+                    <div class="card-header">Current Weather</div>
+                    <div class="weather-content">
+                        <ul>
+                            <li>Temperature: <span id="current-temp">Loading...</span></li>
+                            <li>Condition: <span id="current-description">Loading...</span></li>
+                            <li id="high-temp">High: Loading...</li>
+                            <li id="low-temp">Low: Loading...</li>
+                            <li id="humidity">Humidity: Loading...</li>
+                            <li id="sunrise">Sunrise: Loading...</li>
+                            <li id="sunset">Sunset: Loading...</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="weather card">
+                    <div class="card-header">Weather Forecast</div>
+                    <ul>
+                        <li><strong>Today:</strong> <span id="today-temp">Loading...</span></li>
+                        <li><strong>Tomorrow:</strong> <span id="tomorrow-temp">Loading...</span></li>
+                        <li><strong>Day After Tomorrow:</strong> <span id="day-after-temp">Loading...</span></li>
+                    </ul>
+                </section>
+            </div>
+        
+            <!-- Spotlight Section -->
+            <section class="spotlight-section">
+                <h3>Featured Businesses</h3>
+                <div class="business-card-container">
+                    <!-- Conteúdo dos cartões das empresas em destaque -->
+                </div>
+            </section>
+        </main>
+        
+          <footer>
+            <p>&copy; <span id="currentyear"></span> Eimi Miyake Japan</p>
+            <p id="lastModified"></p>
+         
+            <div class="social">
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="images/youtube.webp"youtube icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.webp" alt="twitter icon">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="images/in.webp" alt="linkedin icon">
+                </a>
+            </div>
+        </footer>  
+        <script src="scripts/miyake.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuButton = document.getElementById(".menu-button");
+                const navigation = document.getElementById(".nav-links");
+                menuButton.addEventListener("click", function () {
+                    const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
+                    menuButton.setAttribute("aria-expanded", !isExpanded);
+                    menuButton.classList.toggle("active");
+                    navigation.classList.toggle("open");
+                });
+            });
+        </script>
+</body>
+</html>
+ 
+ 
