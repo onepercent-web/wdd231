@@ -95,5 +95,17 @@
     </div>
 </footer>  
 <script src="scripts/chamber.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.getElementById(".menu-button");
+        const navigation = document.getElementById(".nav-links");
+        menuButton.addEventListener("click", function () {
+            const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
+            menuButton.setAttribute("aria-expanded", !isExpanded);
+            menuButton.classList.toggle("active");
+            navigation.classList.toggle("open");
+        });
+    });
+</script>
 </body>
 </html>

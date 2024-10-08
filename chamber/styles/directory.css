@@ -336,7 +336,14 @@ footer p {
         margin: 5px;
     }
  
- 
+
+    .nav-links :hover {
+        color: #000000;
+        background-color: #ffffff;
+
+    }
+
+
     nav ul {
         list-style: none;
         padding: 0;
@@ -352,4 +359,4 @@ footer p {
         padding: 10px 0;
         width: 100%;
     }
- 
+}

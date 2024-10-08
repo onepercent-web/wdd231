@@ -10,7 +10,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
 }
 
 header {
@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #ffef11;
-    padding: 10px 20px;
+    padding: 50px 50px;
     position: relative;
 }
 
@@ -32,6 +32,8 @@ header {
 
 .header-container img {
     margin-right: 15px;
+    width: 40px;
+    height: 40px;
 }
 
 .header-container h1 {
@@ -42,12 +44,12 @@ header {
 
 .header-container h1:first-child {
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3.0rem;
 }
 
 .header-container h1:last-child {
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .nav-links {
@@ -61,7 +63,7 @@ header {
 .nav-links.open {
     display: flex;
     flex-direction: column;
-    background-color: #FFAB91;
+    background-color: #ffef11;
     width: 100%;
     padding: 10px 0;
     position: absolute;
@@ -84,7 +86,7 @@ header {
 }
 
 .nav-links a.active {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     color: #000000;
     font-weight: bold;
     border-bottom: 2px solid #002922;
@@ -147,18 +149,21 @@ body {
 .hero img {
     width: 100%;
 }
- 
+
+
 .cta-button {
     position: absolute;
-    bottom: 350px;
-    right: 50px;
-    margin: 0;
+    bottom: 500px;
+    left: 50%;
+    transform: translateX(90%);
     background-color: #000000;
-    color:  #ffffff;
-    padding: 20px 40px;
+    color: #ffffff;
+    padding: 15px 30px;
     border-radius: 60px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1em;
+    white-space: nowrap;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
  
 .cta-button:hover {
@@ -180,7 +185,7 @@ body {
 
 .card {
     background-color: #ffef11;
-    border: 1px solid #FFAB91;
+    border: 4px solid #000000;
     border-radius: 8px;
     padding: 10px;
     width: 48%;
@@ -194,8 +199,8 @@ body {
 }
 
 .card-header {
-    background-color: #c773599a;
-    color: #00201a;
+    background-color: #ffef11;
+    color: #000000;
     font-weight: bold;
     padding: 10px;
     border-top-left-radius: 8px;
@@ -361,6 +366,11 @@ footer p {
  
 /* Responsive design */
 @media (max-width: 700px) {
+    
+    body {
+        text-align: center;
+    }
+    
     .card-container {
       flex-direction: column;
     }
@@ -374,6 +384,7 @@ footer p {
         flex-direction: column;
         width: 100%;
         text-align: center;
+        font-size: 20px;
     }
  
     /* When the open class is added, the links will be displayed */
@@ -393,10 +404,10 @@ footer p {
  
     
     .cta-button {
-        display: block;
-        margin: 10px auto;
-        padding: 10px;
-        font-size: 1.2em;
+        font-size: 0.5em;
+        padding: 10px 10px;
+        margin-bottom: 195px;
+       margin-left: 140px;
     }
  
  
@@ -415,7 +426,14 @@ footer p {
         margin: 5px;
     }
  
- 
+
+    .nav-links :hover {
+        color: #000000;
+        background-color: #ffffff;
+
+    }
+
+
     nav ul {
         list-style: none;
         padding: 0;
@@ -431,19 +449,62 @@ footer p {
         padding: 10px 0;
         width: 100%;
     }
- 
-    .grid-view .business {
-        width: 100%;
-        margin: 10px 5px;
+
+
+
+
+    .card-container h1 {
+        font-size: 20px 
     }
+
+    .card-container h2 {
+        font-size: 15px 
+    }
+    .cards-container {
+        font-size: 10px
+    }
+    
 
     .weather-container {
         flex-direction: column; /* Alinha os cards verticalmente em telas pequenas */
+        text-align: center;
+    }
+
+    .weather-card {
+    text-align: center;
     }
 
     .weather-container .card {
         width: 100%; /* Faz o card ocupar 100% da largura em telas pequenas */
         margin-bottom: 20px; /* Adiciona espaçamento abaixo */
+        font-size: 10px;
+        text-align: center;
+    }
+
+
+    .spotlight-section {
+        text-align: center;
+        font-size: 10px;
+
+    }
+
+    .spotlight-section h3 {
+        font-size: 15px;
+        
+    }
+
+    .spotlight-section img {
+        width: 150px;
+        font-size: 10px;
+        
+    }
+
+    .business-card-container p{
+        font-size: 12px;
+    }
+
+    .business-card-container a{
+        font-size: 10px;
     }
 
     .event-card,

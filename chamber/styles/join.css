@@ -137,3 +137,86 @@ footer p {
     text-decoration: none;
 }
 
+
+
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .card-container {
+      flex-direction: column;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+ 
+    .nav-links {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+ 
+    /* When the open class is added, the links will be displayed */
+    .nav-links.open {
+        display: flex;
+    }
+ 
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+ 
+    .hero img {
+        width: 100%;
+    }
+ 
+    
+    .cta-button {
+        display: block;
+        margin: 10px auto;
+        padding: 10px;
+        font-size: 1.2em;
+    }
+ 
+ 
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+ 
+    footer p {
+        font-size: 0.9em;
+    }
+ 
+    .social img {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+ 
+
+    .nav-links :hover {
+        color: #000000;
+        background-color: #ffffff;
+
+    }
+
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+ 
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+ 
+    nav a {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+    }
+}
