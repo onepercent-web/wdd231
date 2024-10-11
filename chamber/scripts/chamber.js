@@ -1,9 +1,3 @@
-// Last Modified
-window.onload = function() {
-    document.getElementById('currentyear').textContent = new Date().getFullYear();
-    document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
-};
-
 // Fetch members from JSON file
 fetch('data/members.json')
   .then(response => response.json())
@@ -46,3 +40,22 @@ document.getElementById('list-view').addEventListener('click', function () {
     document.querySelector('.grid-view').style.display = 'none';
     document.querySelector('.list-view').style.display = 'table';
 });
+
+
+
+
+// Toggle menu for mobile view
+document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.getElementById("menu");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuButton.addEventListener("click", function () {
+        navLinks.classList.toggle("open"); // Toggle the 'open' class on click
+    });
+});
+
+// Last Modified
+window.onload = function() {
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
+};

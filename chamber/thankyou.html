@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+    <main>
+        <p>Your review has been submitted successfully.</p>
+        <p>Number of reviews submitted: <span id="reviewCount"></span></p>
+
+        <a href="join.html" class="back" > Back to the Join Page</a>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Eimi Miyake Japan</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let reviewCount = localStorage.getItem("reviewCount");
+            if (!reviewCount) {
+                reviewCount = 0;
+            }
+            reviewCount++;
+            localStorage.setItem("reviewCount", reviewCount);
+            document.getElementById("reviewCount").textContent = reviewCount;
+
+            document.getElementById('currentyear').textContent = new Date().getFullYear();
+            document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
+        });
+    
+
+    </script>
+</body>
+</html>

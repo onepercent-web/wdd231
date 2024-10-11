@@ -10,15 +10,21 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
+}
+
+body {
+    line-height: 2.2;
+    background-color: #EAEAEA;
+    font-size: 25px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffef11;
-    padding: 10px 20px;
+    background-color: #95FFDC;
+    padding: 50px 50px;
     position: relative;
 }
 
@@ -32,6 +38,8 @@ header {
 
 .header-container img {
     margin-right: 15px;
+    width: 40px;
+    height: 40px;
 }
 
 .header-container h1 {
@@ -42,12 +50,12 @@ header {
 
 .header-container h1:first-child {
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3.0rem;
 }
 
 .header-container h1:last-child {
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .nav-links {
@@ -61,7 +69,7 @@ header {
 .nav-links.open {
     display: flex;
     flex-direction: column;
-    background-color: #FFAB91;
+    background-color: #ffef11;
     width: 100%;
     padding: 10px 0;
     position: absolute;
@@ -84,7 +92,7 @@ header {
 }
 
 .nav-links a.active {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     color: #000000;
     font-weight: bold;
     border-bottom: 2px solid #002922;
@@ -122,11 +130,7 @@ header {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-body {
-    line-height: 2.2;
-    background-color: #ffffff;
-    font-size: 25px;
-}
+
 
 .logo {
     width: 120px;
@@ -147,24 +151,32 @@ body {
 .hero img {
     width: 100%;
 }
- 
+
+.hero h2 {
+    margin-bottom: 7%;
+}
+
+
 .cta-button {
     position: absolute;
-    bottom: 350px;
-    right: 50px;
-    margin: 0;
+    bottom: 500px;
+    left: 50%;
+    transform: translateX(90%);
     background-color: #000000;
-    color:  #ffffff;
-    padding: 20px 40px;
+    color: #ffffff;
+    padding: 15px 30px;
     border-radius: 60px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1em;
+    white-space: nowrap;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
  
 .cta-button:hover {
     background-color: #ffffff;
     color: #000000;
 }
+ 
 
 /* List view styles */
 .list-view table {
@@ -200,7 +212,7 @@ body {
     width: 30%;
     min-width: 250px;
     max-width: 300px;
-    background-color: #ffef11;
+    background-color: #ffffff;
     border: 2px solid #000000;
     padding: 15px;
     margin: 10px;
@@ -252,14 +264,14 @@ body {
 /* footer */
  
 footer {
-    margin-top: 2%;
+    margin-top: 5%;
     text-align: center;
     padding: 10px 0;
-    background: #000000;
+    background: #95FFDC;
 }
  
 footer p {
-    color: #ffffff;
+    color: #000000;
 }
  
 .social {
@@ -276,9 +288,9 @@ footer p {
  
  
 #lastModified {
-    color: white;
+    color: rgb(0, 0, 0);
 }
- 
+
 
 /* Responsive design */
 @media (max-width: 700px) {
@@ -300,6 +312,7 @@ footer p {
     /* When the open class is added, the links will be displayed */
     .nav-links.open {
         display: flex;
+        color: #ffffff;
     }
  
     .header-container {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tsukuba Chamber of Commerce Directory Page</title>
-    <meta name="description" content="WDD 231 - Chamber Directory Page ">
+    <meta name="description" content="WDD 231 - Chamber Directory Page">
     <meta name="author" content="Eimi Miyake">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -15,6 +15,7 @@
     <meta property="og:url" content="https://onepercent-web.github.io/wdd231/chamber/directory.html">
 </head>
 <body>
+    <div class="main-content">
     <div class="container">
         <header>
             <div class="header-container">
@@ -28,7 +29,7 @@
                     <span class="menu-icon"></span>
                     <span class="menu-icon"></span>
                 </button>
-                <nav class="nav-links" id="navigation" role="navigation" aria-hidden="true">
+                <nav class="nav-links" id="navigation"  aria-hidden="true">
                     <div class="box">
                         <a href="home.html" tabindex="0">Home</a>
                     </div>
@@ -44,74 +45,119 @@
                 </nav>
             </div>
         </header>
-        <main class="card-container">
-            <section class="hero">
-                <img src="images/tsukuba3.webp" alt="Hero image of Tsukuba Chamber of Commerce" loading="lazy" class="hero-image">
-                <h1>Welcome to the Tsukuba Chamber of Commerce</h1>
-                <h2>Connecting businesses and fostering growth in the community.</h2>
-                <a href="#" class="cta-button">Keynote Tickets</a>
-            </section>
+
+        <section class="hero">
+            <img src="images/tsukuba3.webp" alt="Hero image of Tsukuba Chamber of Commerce" loading="lazy" class="hero-image">
+            <h1>Welcome to the Tsukuba Chamber of Commerce</h1>
+            <h2>Connecting businesses and fostering growth in the community.</h2>
+        </section>
         
-            <div class="cards-container">
-                <aside class="event-card card">
-                    <div class="card-header">Upcoming Events</div>
-                    <ul class="event-list">
-                        <h3>Upcoming Events</h3>
-                        <h4>Restaurant Startup Seminar</h4>
-                        <p>Date: October 20, 2024</p>
-                        <p>Learn the essentials of starting and running your own restaurant business.</p>
-                        <a href="#" class="event-link">More Info</a>
-                    </ul>
-                    <ul>
-                        <h4>Environment Study Workshop</h4>
-                        <p>Date: November 2, 2024</p>
-                        <p>A workshop focused on learning about and preserving the natural environment.</p>
-                        <a href="#" class="event-link">More Info</a>
-                    </ul>
-                </aside>
-            </div>
-        
-            <div class="weather-container">
-                <section class="data card">
-                    <div class="card-header">Current Weather</div>
-                    <div class="weather-content">
-                        <ul>
-                            <li>Temperature: <span id="current-temp">Loading...</span></li>
-                            <li>Condition: <span id="current-description">Loading...</span></li>
-                            <li id="high-temp">High: Loading...</li>
-                            <li id="low-temp">Low: Loading...</li>
-                            <li id="humidity">Humidity: Loading...</li>
-                            <li id="sunrise">Sunrise: Loading...</li>
-                            <li id="sunset">Sunset: Loading...</li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="weather card">
-                    <div class="card-header">Weather Forecast</div>
-                    <ul>
-                        <li><strong>Today:</strong> <span id="today-temp">Loading...</span></li>
-                        <li><strong>Tomorrow:</strong> <span id="tomorrow-temp">Loading...</span></li>
-                        <li><strong>Day After Tomorrow:</strong> <span id="day-after-temp">Loading...</span></li>
-                    </ul>
-                </section>
-            </div>
-        
-            <!-- Spotlight Section -->
-            <section class="spotlight-section">
-                <h3>Featured Businesses</h3>
-                <div class="business-card-container">
-                    <!-- Conteúdo dos cartões das empresas em destaque -->
+        <main>
+            <div class="main-content">
+                <!-- Form Section -->
+                <div class="form-section">
+                    <form method="get" action="thankyou.html">
+                        <!-- Membership Application Form -->
+                        <fieldset>
+                            <legend class="form-title">Membership Application Form</legend>
+                            
+                            <div class="form-part">
+                                <label for="first-name">First Name:<span class="required">*</span></label>
+                                <input type="text" id="first-name" name="first-name" title="First Name" required autocomplete="given-name">
+                            </div>
+
+                            <div class="form-part">
+                                <label for="last-name">Last Name:<span class="required">*</span></label>
+                                <input type="text" id="last-name" name="last-name" title="Last Name" required autocomplete="family-name">
+                            </div>
+                            
+                            <div class="form-part">
+                                <label for="org-title">Organizational Title:<span class="required">*</span></label>
+                                <input type="text" id="org-title" name="org-title" pattern="[A-Za-z\s-]{7,}" required title="Organizational Title" autocomplete="organization-title">
+                            </div>
+                        
+                            <div class="form-part">
+                                <label for="email">Email:<span class="required">*</span></label>
+                                <input type="email" id="email" name="email" title="Your Email Address" required autocomplete="email" placeholder="example@example.com">
+                            </div>
+                        
+                           <div class="form-part">
+                                <label for="phone">Mobile Phone Number:<span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" title="Your Mobile Phone Number" required autocomplete="tel">
+                           </div>
+                        
+                           <div class="form-part">
+                                <label for="organization">Business/Organization's Name:<span class="required">*</span></label>
+                                <input type="text" id="organization" name="organization" title="Business/Organization Name" required autocomplete="organization">
+                           </div>
+                        </fieldset>
+                        
+                        <fieldset> 
+                            <legend class="form-title">Your Membership Level</legend>
+                            
+                            <div class="form-part">
+                                <label for="membership">Your membership level:<span class="required">*</span></label>
+                                <select id="membership" name="membership" required>
+                                    <option value="" disabled selected>Select your membership level</option>
+                                    <option value="NP">NP Membership is for non profit organizations and there is no fee.</option>
+                                    <option value="Bronze">Bronze Membership</option>
+                                    <option value="Silver">Silver Membership</option>
+                                    <option value="Gold">Gold Membership</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend class="form-title">Business/Organization's Description</legend>
+                            <div class="form-part">
+                                <label for="description">Description:</label>
+                                <textarea id="description" name="description" title="Description of your business/organization"></textarea>
+                            </div>
+                        </fieldset>
+                        <input type="hidden" id="timestamp" name="timestamp">
+                        <input type="submit" class="submit" value="Join Now">
+                    </form>
                 </div>
-            </section>
+                
+                <!-- Membership Card Section -->
+                <div class="membership-card-section">
+                    <fieldset>
+                        <legend class="level">Membership Levels</legend>
+                        <div class="membership-cards">
+                            <div class="card" id="card1">
+                                <h2>Non-Profit Membership</h2>
+                                <p>No Fee</p>
+                                <a href="#" class="info-link" data-modal="modal1">Learn More</a>
+                            </div>
+                            
+                            <div class="card" id="card2">
+                                <h2>Bronze Membership</h2>
+                                <p>Basic benefits</p>
+                                <a href="#" class="info-link" data-modal="modal2">Learn More</a>
+                            </div>
+                            <div class="card" id="card3">
+                                <h2>Silver Membership</h2>
+                                <p>Enhanced benefits</p>
+                                <a href="#" class="info-link" data-modal="modal3">Learn More</a>
+                            </div>
+                            <div class="card" id="card4">
+                                <h2>Gold Membership</h2>
+                                <p>All benefits</p>
+                                <a href="#" class="info-link" data-modal="modal4">Learn More</a>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            
         </main>
-        
-          <footer>
+
+        <footer>
             <p>&copy; <span id="currentyear"></span> Eimi Miyake Japan</p>
             <p id="lastModified"></p>
-         
             <div class="social">
                 <a href="https://www.youtube.com" target="_blank">
-                    <img src="images/youtube.webp"youtube icon">
+                    <img src="images/youtube.webp" alt="youtube icon">
                 </a>
                 <a href="https://twitter.com" target="_blank">
                     <img src="images/twitter.webp" alt="twitter icon">
@@ -121,11 +167,11 @@
                 </a>
             </div>
         </footer>  
-        <script src="scripts/home.js"></script>
+        <script src="scripts/join.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                const menuButton = document.getElementById(".menu-button");
-                const navigation = document.getElementById(".nav-links");
+                const menuButton = document.querySelector("#menu");
+                const navigation = document.querySelector("#navigation");
                 menuButton.addEventListener("click", function () {
                     const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
                     menuButton.setAttribute("aria-expanded", !isExpanded);
@@ -133,8 +179,9 @@
                     navigation.classList.toggle("open");
                 });
             });
-        </script>
+            </script>
+            </div>
+        </div>
 </body>
+
 </html>
- 
- 
