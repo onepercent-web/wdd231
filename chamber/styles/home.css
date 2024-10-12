@@ -498,13 +498,18 @@ footer p {
     }
     
 
+
+
     .weather-container {
         flex-direction: column; /* Alinha os cards verticalmente em telas pequenas */
         text-align: center;
+        padding-right: 40px;
     }
 
     .weather-card {
-    text-align: center;
+        font-size: 12px;
+        padding: 15px;
+        text-align: center;
     }
 
     .weather-container .card {
