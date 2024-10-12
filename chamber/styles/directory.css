@@ -178,6 +178,13 @@ header {
 }
  
 
+.cards-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+
 /* List view styles */
 .list-view table {
     width: 100%;
@@ -294,6 +301,11 @@ footer p {
 
 /* Responsive design */
 @media (max-width: 700px) {
+    
+    body {
+        text-align: center;
+    }
+    
     .card-container {
       flex-direction: column;
     }
@@ -307,12 +319,12 @@ footer p {
         flex-direction: column;
         width: 100%;
         text-align: center;
+        font-size: 20px;
     }
  
     /* When the open class is added, the links will be displayed */
     .nav-links.open {
         display: flex;
-        color: #ffffff;
     }
  
     .header-container {
@@ -327,10 +339,10 @@ footer p {
  
     
     .cta-button {
-        display: block;
-        margin: 10px auto;
-        padding: 10px;
-        font-size: 1.2em;
+        font-size: 0.5em;
+        padding: 10px 10px;
+        margin-bottom: 195px;
+       margin-left: 140px;
     }
  
  
