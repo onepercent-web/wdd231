@@ -1,5 +1,5 @@
 /* header */
- 
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +11,12 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
+}
+
+body {
+    line-height: 2.2;
+    background-color: #EAEAEA;
+    font-size: 25px;
 }
 
 header {
@@ -28,6 +34,7 @@ header {
     justify-content: space-between; /* Isso ajuda a empurrar os itens para as extremidades */
     width: 100%; /* Garante que o container ocupe a largura total */
 }
+
 
 .header-container img {
     margin-right: 15px;
@@ -62,7 +69,7 @@ header {
 .nav-links.open {
     display: flex;
     flex-direction: column;
-    background-color: #FFF788;
+    background-color: #ffffff;
     width: 100%;
     padding: 10px 0;
     position: absolute;
@@ -88,7 +95,7 @@ header {
     background-color: #ffffff;
     color: #000000;
     font-weight: bold;
-    border-bottom: 2px solid #002922;
+    border-bottom: 2px solid #000000;
 }
 
 .menu-button {
@@ -107,7 +114,7 @@ header {
 .menu-icon {
     width: 35px;
     height: 4px;
-    background-color: #002c24;
+    background-color: #000000;
     transition: all 0.3s;
 }
  
@@ -122,8 +129,21 @@ header {
 .menu-button.active .menu-icon:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
+
+
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+ 
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
  
 .hero {
+    position: relative;
     margin: 20px 0;
     text-align: center;
 }
@@ -135,7 +155,6 @@ header {
 .hero h2 {
     margin-bottom: 7%;
 }
-
 
 
 body {
@@ -408,6 +427,83 @@ dialog button {
 
 
 
+/* Modal Background */
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal[open] {
+    display: block; /* Display the modal when opened */
+}
+
+.modal-content {
+    color: #303030;
+    font-size: 1rem;
+    line-height: 3;
+}
+
+.modal-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #303030;
+    margin-bottom: 10px;
+}
+
+.modal-content h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #303030;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.modal-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #303030;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Fade-in animation for modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
 
 
 /* This is for Thankyou.html Page */
@@ -448,20 +544,34 @@ footer p {
 
 
 /* Responsive design */
+
+
+
+
 @media (max-width: 700px) {
-    
+
+    /* Center body text for readability on small screens */
     body {
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    /* Header adjustments for mobile */
+    .header-container {
+        flex-direction: column;
         text-align: center;
     }
     
-    .card-container {
-      flex-direction: column;
+    .header-container h1 {
+        font-size: 1.8em;
+        text-align: center;
     }
 
     .menu-button {
         display: flex;
     }
  
+    /* Mobile navigation */
     .nav-links {
         display: none; /* Hidden by default */
         flex-direction: column;
@@ -470,30 +580,82 @@ footer p {
         font-size: 20px;
     }
  
-    /* When the open class is added, the links will be displayed */
+    /* Display links when menu is open */
     .nav-links.open {
         display: flex;
     }
  
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-    }
- 
- 
+    /* Hero section adjustments */
     .hero img {
         width: 100%;
     }
- 
     
-    .cta-button {
-        font-size: 0.5em;
-        padding: 10px 10px;
-        margin-bottom: 195px;
-       margin-left: 140px;
+    .hero h1, .hero h2 {
+        font-size: 1.2em;
+        margin: 10px 0;
     }
- 
- 
+    
+    /* Membership card adjustments */
+    .membership-card-section {
+        padding: 1rem;
+    }
+
+    .membership-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .membership-cards .card {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .membership-cards h2 {
+        font-size: 1.2em;
+    }
+
+    /* Adjust modal content for smaller screens */
+    .modal-content h2 {
+        font-size: 1.5em;
+    }
+
+    .modal-content h3 {
+        font-size: 1.3em;
+    }
+
+    .modal-content ul li {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    /* Modal close button adjustment */
+    .close {
+        font-size: 1.3rem;
+        padding: 5px;
+        top: 10px;
+        right: 10px;
+    }
+
+    /* Form section adjustments */
+    .form-section {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .form-title {
+        font-size: 1.5em;
+    }
+
+    label, input, select, textarea {
+        font-size: 1em;
+    }
+    
+    /* Footer adjustments */
     footer {
         padding: 20px;
         text-align: center;
@@ -504,35 +666,8 @@ footer p {
     }
  
     .social img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         margin: 5px;
     }
- 
-
-    .nav-links :hover {
-        color: #000000;
-        background-color: #ffffff;
-
-    }
-
-
-    nav ul {
-        list-style: none;
-        padding: 0;
-    }
- 
-    nav ul li {
-        width: 100%;
-        text-align: center;
-    }
- 
-    nav a {
-        display: block;
-        padding: 10px 0;
-        width: 100%;
-    }
-
-
 }
-

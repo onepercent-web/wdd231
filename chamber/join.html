@@ -15,7 +15,6 @@
     <meta property="og:url" content="https://onepercent-web.github.io/wdd231/chamber/directory.html">
 </head>
 <body>
-    <div class="main-content">
     <div class="container">
         <header>
             <div class="header-container">
@@ -29,7 +28,7 @@
                     <span class="menu-icon"></span>
                     <span class="menu-icon"></span>
                 </button>
-                <nav class="nav-links" id="navigation"  aria-hidden="true">
+                <nav class="nav-links" id="navigation" role="navigation" aria-hidden="true">
                     <div class="box">
                         <a href="home.html" tabindex="0">Home</a>
                     </div>
@@ -45,14 +44,16 @@
                 </nav>
             </div>
         </header>
+            <div class="card-container">
+                <section class="hero">
+                    <img src="images/tsukuba3.webp" alt="Hero image of Tsukuba Chamber of Commerce" loading="lazy" class="hero-image">
+                    <h1>Welcome to the Tsukuba Chamber of Commerce</h1>
+                    <h2>Connecting businesses and fostering growth in the community.</h2>
+                </section>
+            </div>
 
-        <section class="hero">
-            <img src="images/tsukuba3.webp" alt="Hero image of Tsukuba Chamber of Commerce" loading="lazy" class="hero-image">
-            <h1>Welcome to the Tsukuba Chamber of Commerce</h1>
-            <h2>Connecting businesses and fostering growth in the community.</h2>
-        </section>
+            <main>
         
-        <main>
             <div class="main-content">
                 <!-- Form Section -->
                 <div class="form-section">
@@ -118,7 +119,8 @@
                         <input type="submit" class="submit" value="Join Now">
                     </form>
                 </div>
-                
+
+
                 <!-- Membership Card Section -->
                 <div class="membership-card-section">
                     <fieldset>
@@ -129,7 +131,7 @@
                                 <p>No Fee</p>
                                 <a href="#" class="info-link" data-modal="modal1">Show More</a>
                             </div>
-                            
+            
                             <div class="card" id="card2">
                                 <h2>Bronze Membership</h2>
                                 <p>Basic benefits</p>
@@ -148,6 +150,32 @@
                         </div>
                     </fieldset>
                 </div>
+                <!-- Modal Dialogs for each membership level -->
+                <dialog id="modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-close="modal1">&times;</span>
+                        <!-- Content for Non-Profit Membership in JavaScript -->
+                    </div>
+                </dialog>
+                <dialog id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-close="modal2">&times;</span>
+                        <!-- Content for Bronze Membership in JavaScript -->
+                    </div>
+                </dialog>
+                <dialog id="modal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-close="modal3">&times;</span>
+                        <!-- Content for Silver Membership in JavaScript -->
+                    </div>
+                </dialog>
+                <dialog id="modal4" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-close="modal4">&times;</span>
+                        <!-- Content for Gold Membership in JavaScript -->
+                    </div>
+                </dialog>
+            
             </div>
             
         </main>
@@ -170,8 +198,8 @@
         <script src="scripts/join.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                const menuButton = document.querySelector("#menu");
-                const navigation = document.querySelector("#navigation");
+                const menuButton = document.getElementById(".menu-button");
+                const navigation = document.getElementById(".nav-links");
                 menuButton.addEventListener("click", function () {
                     const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
                     menuButton.setAttribute("aria-expanded", !isExpanded);
@@ -179,7 +207,7 @@
                     navigation.classList.toggle("open");
                 });
             });
-            </script>
+        </script>
             </div>
         </div>
 </body>

@@ -81,7 +81,7 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: #002922;
+    color: #000000;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -95,7 +95,7 @@ header {
     background-color: #ffffff;
     color: #000000;
     font-weight: bold;
-    border-bottom: 2px solid #002922;
+    border-bottom: 2px solid 000000;
 }
 
 .menu-button {

@@ -69,7 +69,7 @@ header {
 .nav-links.open {
     display: flex;
     flex-direction: column;
-    background-color: #ffef11;
+    background-color: #ffffff;
     width: 100%;
     padding: 10px 0;
     position: absolute;
@@ -81,7 +81,7 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: #002922;
+    color: #000000;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -95,7 +95,7 @@ header {
     background-color: #ffffff;
     color: #000000;
     font-weight: bold;
-    border-bottom: 2px solid #002922;
+    border-bottom: 2px solid #000000;
 }
 
 .menu-button {
@@ -185,24 +185,70 @@ header {
 }
 
 
+/* View bottom */
+
+.view {
+    text-align: center;
+}
+
+
+.view button {
+    background-color: #95FFDC;
+    padding: 20px 25px ;
+    margin: 2%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.view button:hover {
+    background-color: #ffffff;
+}
+
+
 /* List view styles */
+#members-container.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-view {
+    margin-top: 5%;
+}
+
 .list-view table {
     width: 100%;
     border-collapse: collapse;
 }
+
 .list-view th, .list-view td {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2.5px solid #95FFDC;
+    text-align: left;
 }
+
 .list-view th {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
+    font-weight: bold;
 }
 
 
 .list-view a {
-    color: #0000EE;
+    color: #0066cc;
     text-decoration: none;
 }
+
+
+.list-view a:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+
+
+
 
 
 
@@ -216,6 +262,7 @@ header {
 }
 
 .grid-view .member-card {
+    text-align: center;
     width: 30%;
     min-width: 250px;
     max-width: 300px;
@@ -233,26 +280,23 @@ header {
 }
 
 .grid-view img {
-    margin-top: 10px;
+    margin-top: 18px;
     width: 80%;
     height: auto;
-    margin-bottom: 15px;
 }
 
 .grid-view h3 {
     font-size: 1.25rem;
-    color: #333;
+    color: #303030;
 }
 
 .grid-view p {
-    color: #555;
+    color: #303030;
     font-size: 1rem;
     margin: 5px 0;
 }
 
 .grid-view a {
-    display: inline-block;
-    margin-top: 10px;
     color: #0066cc;
     text-decoration: none;
     font-weight: bold;
@@ -260,7 +304,7 @@ header {
 }
 
 .grid-view a:hover {
-    color: #004499;
+    color: #0066cc;
     text-decoration: underline;
 }
 
@@ -383,5 +427,96 @@ footer p {
         display: block;
         padding: 10px 0;
         width: 100%;
+    }
+
+
+
+
+    .card-container h1 {
+        font-size: 20px 
+    }
+
+    .card-container h2 {
+        font-size: 15px 
+    }
+    .cards-container {
+        font-size: 10px
+    }
+    
+
+
+
+
+
+
+
+
+.grid-view .member-card {
+        text-align: center;
+        min-width: 220px;
+        background-color: #ffffff;
+        border: 2px solid #000000;
+        padding: 15px;
+        margin: 5px;
+        text-align: center;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+}
+    
+.grid-view p {
+    font-size: 0.5em;
+}
+
+.grid-view h3 {
+    font-size: 0.6em;
+}
+.grid-view a {
+    font-size: 0.37em;
+}
+
+
+
+
+
+
+    .list-view table {
+
+        border-collapse: collapse;
+
+    }
+    
+    .list-view th, .list-view td {
+        padding:10px 8px;
+        font-size: 0.5em;
+    }
+    
+    .list-view th {
+        background-color: #eaeaea;
+        color: #000;
+    }
+    
+    .list-view td {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+        border-bottom: 1px solid #95FFDC;
+    }
+    
+    /* Stack each cell with labels for mobile readability */
+    .list-view th, .list-view td:before {
+        font-weight: bold;
+        color: #000000;
+    }
+
+    /* Set responsive display and spacing for cells */
+    .list-view tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        border: 1px solid #EAEAEA;
+        border-radius: 8px;
+        padding: 8px;
+        background-color: #fff;
     }
 }

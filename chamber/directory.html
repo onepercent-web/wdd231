@@ -28,7 +28,7 @@
                     <span class="menu-icon"></span>
                     <span class="menu-icon"></span>
                 </button>
-                <nav class="nav-links" id="navigation" aria-hidden="true">
+                <nav class="nav-links" id="navigation" role="navigation" aria-hidden="true">
                     <div class="box">
                         <a href="home.html" tabindex="0">Home</a>
                     </div>
@@ -44,6 +44,8 @@
                 </nav>
             </div>
         </header>
+
+        <!-- Main content -->
         <main class="card-container">
             <section class="hero">
                 <img src="images/tsukuba3.webp" alt="Hero image of Tsukuba Chamber of Commerce" loading="lazy" class="hero-image">
@@ -51,61 +53,68 @@
                 <h2>Connecting businesses and fostering growth in the community.</h2>
                 <a href="#" class="cta-button">Keynote Tickets</a>
             </section>
-
-    
-
-    <!-- Main content -->
-    <main>
-        <!-- Grid view structure -->
-        <div class="grid-view">
-            <!-- JSON data will be dynamically inserted here -->
-        </div>
-
-        <!-- List view structure -->
-        <div class="list-view" style="display: none;">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>Phone</th>
-                        <th>Website</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- JSON data will be dynamically inserted here -->
-                </tbody>
-            </table>
-        </div>
-</main>
-<footer>
-    <p>&copy; <span id="currentyear"></span> Eimi Miyake Japan</p>
-    <p id="lastModified"></p>
- 
-    <div class="social">
-        <a href="https://www.youtube.com" target="_blank">
-            <img src="images/youtube.webp"youtube icon">
-        </a>
-        <a href="https://twitter.com" target="_blank">
-            <img src="images/twitter.webp" alt="twitter icon">
-        </a>
-        <a href="https://www.linkedin.com" target="_blank">
-            <img src="images/in.webp" alt="linkedin icon">
-        </a>
-    </div>
-</footer>  
-<script src="scripts/chamber.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuButton = document.getElementById(".menu-button");
-        const navigation = document.getElementById(".nav-links");
-        menuButton.addEventListener("click", function () {
-            const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
-            menuButton.setAttribute("aria-expanded", !isExpanded);
-            menuButton.classList.toggle("active");
-            navigation.classList.toggle("open");
-        });
-    });
-</script>
+            
+            <!-- Add view toggle buttons here -->
+            <div class="view">
+                <button id="grid">
+                    <img src="images/grid.png" alt="Grid View Icon" width="24" height="24">
+                </button>
+                <button id="list">
+                    <img src="images/list5.png" alt="List View Icon" width="24" height="24">
+                </button>
+            </div>
+            
+            <!-- Grid view structure -->
+            <div id="grid-view" class="grid-view">
+                <!-- JSON data will be dynamically inserted here -->
+            </div>
+            
+            <!-- List view structure -->
+            <div id="list-view" class="list-view" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Phone</th>
+                            <th>Website</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- JSON data will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Eimi Miyake Japan</p>
+            <p id="lastModified"></p>
+            
+            <div class="social">
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="images/youtube.webp"youtube icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.webp" alt="twitter icon">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="images/in.webp" alt="linkedin icon">
+                </a>
+            </div>
+        </footer>  
+        <script src="scripts/chamber.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuButton = document.getElementById(".menu-button");
+                const navigation = document.getElementById(".nav-links");
+                menuButton.addEventListener("click", function () {
+                    const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
+                    menuButton.setAttribute("aria-expanded", !isExpanded);
+                    menuButton.classList.toggle("active");
+                    navigation.classList.toggle("open");
+                });
+            });
+        </script>
 </body>
 </html>
+ 

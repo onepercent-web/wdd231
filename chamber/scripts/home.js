@@ -82,6 +82,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// Last Modified
+window.onload = function() {
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
+};
+
 // Toggle menu for mobile view
 document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.getElementById("menu");
@@ -92,8 +98,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Last Modified
-window.onload = function() {
-    document.getElementById('currentyear').textContent = new Date().getFullYear();
-    document.getElementById('lastModified').textContent = 'Last modified: ' + document.lastModified;
-};
