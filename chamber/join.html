@@ -72,8 +72,8 @@
                             </div>
                             
                             <div class="form-part">
-                                <label for="org-title">Organizational Title:<span class="required">*</span></label>
-                                <input type="text" id="org-title" name="org-title" pattern="[A-Za-z\s-]{7,}" required title="Organizational Title" autocomplete="organization-title">
+                                
+                                <input type="text" id="org-title" name="org-title"  pattern="^[A-Za-z\s-]+$"  required title="Organizational Title" required minlength="7" autocomplete="organization-title">
                             </div>
                         
                             <div class="form-part">
