@@ -814,6 +814,7 @@ footer p {
     /* Form section adjustments */
     .form-section {
         padding: 1rem;
+        margin: 0 auto;
         border-radius: 5px;
     }
 
@@ -823,15 +824,15 @@ footer p {
         margin-bottom: 1rem;
     }
 
+    .form-part {
+        margin-bottom: 15px;
+    }
+
     label {
         font-size: 1rem;
         font-weight: bold;
-        margin-top: 1rem;
+        margin-bottom: 0.5rem;
         display: block;
-    }
-
-    .form-part {
-        margin-bottom: 10px;
     }
 
     input[type="text"],
@@ -839,8 +840,8 @@ footer p {
     input[type="tel"],
     textarea,
     select {
-        width: 100%;
-        padding: 0.8rem;
+        width: 100%; 
+        padding: 1rem;
         font-size: 1rem;
         margin-top: 0.5rem;
         border: 1px solid #303030;
@@ -848,8 +849,9 @@ footer p {
         box-sizing: border-box;
     }
 
-    textarea#review {
-        height: 100px;
+    textarea {
+        height: 100px; 
+        resize: vertical; 
     }
 
     input[type="submit"] {
@@ -859,16 +861,26 @@ footer p {
         font-weight: bold;
         color: #ffffff;
         background-color: #303030;
-        border: 2px solid #303030;
+        border: none;
         border-radius: 5px;
         cursor: pointer;
         margin-top: 1.5rem;
-        height: auto;
     }
 
     input[type="submit"]:hover {
-        background-color: #ffffff;
-        color: #303030;
+        background-color: #555555;
+    }
+
+    fieldset {
+        border: none;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-top: 1rem;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.2);
+        margin-right: 0.5rem;
     }
 
 
@@ -881,7 +893,6 @@ footer p {
 
 
 
-    
 
     
     /* Footer adjustments */
