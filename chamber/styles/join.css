@@ -289,10 +289,8 @@ input[type="submit"]:hover {
     flex: 0 0 40%;
     margin-left: 20px;
     padding: 20px;
-
     box-shadow: 0 2px 4px rgba(212, 212, 212, 0.1); /* ホバー時の軽いシャドウ効果 */
     transition: transform 0.2s;
-
 }
 
 .level {
@@ -420,24 +418,17 @@ dialog button {
     color: #0037ff;
 }
 
-
-
-
-
-
-/* Modal Background */
 /* Modal Styling */
 .modal {
     display: none; /* Hidden by default */
     position: fixed;
-    top: 50%;
-    left: 50%;
+    margin: 10px;
     transform: translate(-50%, -50%);
     border-radius: 8px;
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 90%;
+    width: 60%;
     max-width: 600px;
     animation: fadeIn 0.3s ease;
 }
@@ -487,6 +478,7 @@ dialog button {
 ::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 
 /* Fade-in animation for modal */
 @keyframes fadeIn {
@@ -705,18 +697,8 @@ footer p {
         margin-top: 10%;
         margin-bottom: 2%;
     }
-
-    .membership-cards {
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    .card {
-        margin-bottom: 20px;
-        padding: 10px;
-        font-size: 1rem;
-        text-align: center;
-    }
+  
+    /* Show more bottom */
 
     .info-link {
         background-color: #ffffff; 
@@ -732,11 +714,21 @@ footer p {
         background-color: #ffffff;
         color: #0037ff; 
     }
-}
 
+    /* Membership cards*/
 
+    .membership-cards {
+        flex-direction: column;
+        margin-left: 0;
+    }
 
-    /* Membership card adjustments */
+    .card {
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
     .membership-card-section {
         padding: 1rem;
     }
@@ -810,20 +802,87 @@ footer p {
         cursor: pointer;
     }
 
+
+
+
+
+
+
+
+
+
     /* Form section adjustments */
     .form-section {
-        width: 90%;
-        margin: 0 auto;
         padding: 1rem;
+        border-radius: 5px;
     }
 
     .form-title {
-        font-size: 1.5em;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 1rem;
     }
 
-    label, input, select, textarea {
-        font-size: 1em;
+    label {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 1rem;
+        display: block;
     }
+
+    .form-part {
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        border: 1px solid #303030;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    textarea#review {
+        height: 100px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #303030;
+        border: 2px solid #303030;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 1.5rem;
+        height: auto;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #ffffff;
+        color: #303030;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
+
     
     /* Footer adjustments */
     footer {
@@ -840,3 +899,4 @@ footer p {
         height: 30px;
         margin: 5px;
     }
+}
