@@ -546,30 +546,49 @@ footer p {
 
 
 
-@media (max-width: 700px) {
 
-    /* Center body text for readability on small screens */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    
     body {
         text-align: center;
-        font-size: 18px;
     }
     
-    /* Header adjustments for mobile */
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .header-container h1 {
-        font-size: 1.8em;
-        text-align: center;
+    .card-container {
+      flex-direction: column;
     }
 
     .menu-button {
         display: flex;
     }
  
-    /* Mobile navigation */
     .nav-links {
         display: none; /* Hidden by default */
         flex-direction: column;
@@ -578,21 +597,145 @@ footer p {
         font-size: 20px;
     }
  
-    /* Display links when menu is open */
+    /* When the open class is added, the links will be displayed */
     .nav-links.open {
         display: flex;
     }
  
-    /* Hero section adjustments */
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+ 
     .hero img {
         width: 100%;
     }
-    
-    .hero h1, .hero h2 {
-        font-size: 1.2em;
-        margin: 10px 0;
+ 
+ 
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+ 
+    footer p {
+        font-size: 0.9em;
+    }
+ 
+    .social img {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+ 
+
+    .nav-links :hover {
+        color: #000000;
+        background-color: #ffffff;
+
+    }
+
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+ 
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+ 
+    nav a {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .card-container h1 {
+        font-size: 20px 
+    }
+
+    .card-container h2 {
+        font-size: 15px 
+    }
+    .cards-container {
+        font-size: 10px
     }
     
+
+    main {
+        width: 100%;
+        padding: 1rem;
+        margin: 2rem auto;
+    }
+
+
+
+
+
+
+
+
+
+     /* form part */
+    .form-section,
+    .membership-card-section {
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    .form-part {
+        margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    input[type="submit"] {
+        padding: 0.5rem;
+        font-size: 1rem;
+        height: auto;
+        margin-top: 10%;
+        margin-bottom: 2%;
+    }
+
+    .membership-cards {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .info-link {
+        background-color: #ffffff; 
+        color: #303030; 
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 0.8em;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .info-link:hover {
+        background-color: #ffffff;
+        color: #0037ff; 
+    }
+}
+
+
+
     /* Membership card adjustments */
     .membership-card-section {
         padding: 1rem;
@@ -617,25 +760,54 @@ footer p {
     }
 
     /* Adjust modal content for smaller screens */
+
+
+     .modal {
+        width: 90%; 
+        max-width: 90%;
+        padding: 1rem;
+        border-radius: 5px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow-y: auto; 
+        max-height: 80vh; 
+    }
+
+    .modal-content {
+        font-size: 0.9rem; 
+        line-height: 1.4;
+        padding: 1rem;
+    }
+
     .modal-content h2 {
-        font-size: 1.5em;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #303030;
+        margin-bottom: 10px;
+        text-align: center;
     }
 
-    .modal-content h3 {
-        font-size: 1.3em;
+    .modal-content p,
+    .modal-content ul {
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+        color: #303030;
     }
 
-    .modal-content ul li {
-        font-size: 1em;
-        line-height: 1.5;
+    .modal-content ul {
+        padding-left: 1rem;
     }
 
-    /* Modal close button adjustment */
     .close {
-        font-size: 1.3rem;
-        padding: 5px;
-        top: 10px;
+        font-size: 1.2rem;
+        color: #303030;
+        position: absolute;
+        top: 5px;
         right: 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 
     /* Form section adjustments */
@@ -668,4 +840,3 @@ footer p {
         height: 30px;
         margin: 5px;
     }
-}

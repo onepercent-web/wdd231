@@ -491,8 +491,9 @@ footer p {
     }
     
     .list-view th {
-        background-color: #eaeaea;
-        color: #000;
+        background-color: #ffffff;
+        color: #000000;
+        border-bottom: 2px solid #303030;
     }
     
     .list-view td {
@@ -500,7 +501,6 @@ footer p {
         width: 100%;
         text-align: left;
         padding: 10px 0;
-        border-bottom: 1px solid #95FFDC;
     }
     
     /* Stack each cell with labels for mobile readability */
