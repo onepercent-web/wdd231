@@ -407,16 +407,50 @@ figcaption {
 
 .content-layout {
     grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+/* Sidebar styling for mobile */
+.sidebar {
+    padding: 15px;
+    font-size: 0.9rem; /* Slightly smaller font for readability */
+}
+
+.sidebar h3 {
+    font-size: 1.2rem; /* Smaller heading size on mobile */
+    padding-bottom: 5px;
+}
+
+.visitor-info {
+    font-size: 1rem;
     padding: 10px;
 }
 
-.sidebar,
+/* Gallery styling adjustments for mobile */
 .gallery {
-    padding: 10px;
+    padding: 15px;
 }
 
+.gallery h2 {
+    font-size: 1.6rem; /* Smaller heading size for mobile */
+    padding-bottom: 8px;
+}
+
+/* Make images stack in a single column on smaller screens */
 .images {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 10px;
+}
+
+.gallery-image {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 0.9rem; /* Smaller caption text */
 }
     
 }
