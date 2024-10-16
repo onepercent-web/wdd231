@@ -157,13 +157,6 @@ body {
     margin: 20px 0;
 }
 
-/* main content */
-
-
-
-
-
-
 
 /* footer */
  
@@ -202,25 +195,38 @@ footer p {
 
 
 /* Layout for the Discover page */
+/* Main content layout styling */
+.content-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: rgba(149, 255, 220, 0.3); /* Semi-transparent mint background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+/* Sidebar styling */
 .sidebar {
-    background-color: #fff; /* White background for sidebar */
+    background-color: rgba(149, 255, 220, 0.6); /* Slightly transparent for an "aero" effect */
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar h3 {
     font-size: 1.4rem;
-    color: #333;
+    color: #008080; /* Deep aqua for headings */
     margin-bottom: 10px;
-    border-bottom: 2px solid #4CAF50; /* Green underline for section titles */
+    border-bottom: 2px solid #008080;
     padding-bottom: 5px;
 }
 
 .sidebar p,
 .sidebar ul {
     font-size: 1rem;
-    color: #555;
+    color: #006060; /* Slightly darker text for contrast */
     line-height: 1.6;
 }
 
@@ -230,7 +236,7 @@ footer p {
 }
 
 .visitor-info {
-    background-color: #e0f7fa; /* Light blue background for visitor info */
+    background-color: rgba(149, 255, 220, 0.4); /* Transparent mint */
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -238,24 +244,24 @@ footer p {
     font-weight: bold;
 }
 
-
-
-
-/* Gallery styling */
+/* Gallery section */
 .gallery {
-    padding: 20px;
-    background-color: #f5f5dc; /* Light yellow background to match the example */
-    border-radius: 8px;
-    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9); /* Translucent white for a clean look */
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .gallery h2 {
     text-align: center;
     font-size: 1.8rem;
-    color: #333;
+    color: #008080;
     margin-bottom: 20px;
+    border-bottom: 2px solid #00cccc; /* Lighter aqua for accent */
+    padding-bottom: 10px;
 }
 
+/* Gallery images */
 .images {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -264,14 +270,14 @@ footer p {
 
 .gallery-image {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-image:hover {
-    transform: scale(1.03); /* Slight zoom on hover */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
 }
 
 figure {
@@ -284,10 +290,9 @@ figure {
 figcaption {
     margin-top: 10px;
     font-size: 1rem;
-    color: #555;
+    color: #006060; /* Aqua-tinted text for captions */
     text-align: center;
 }
-
 
 
 
