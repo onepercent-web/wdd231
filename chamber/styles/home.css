@@ -518,31 +518,26 @@ footer p {
 
 .join-message {
     position: absolute;
-    top: 15%;
+    top: 15%; /* 上部に配置 */
     left: 50%;
     transform: translate(-50%, 0); /* 左右中央揃え */
-    width: 80%; /* 幅を長く */
-    max-width: 300px; /* 最大幅を300pxに設定 */
-    padding: 0.5rem; /* 内側のパディングを調整 */
+    width: 70%; /* 幅をさらに狭める */
+    max-width: 250px; /* 最大幅を250pxに設定 */
+    padding: 0.3rem; /* 内側のパディングを縮小 */
     background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
-    border-radius: 7px;
+    border-radius: 6px;
     text-align: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .join-message p {
-    font-size: 0.7rem; /* テキストサイズを小さく */
-    margin-bottom: 0.4rem;
+    font-size: 0.6rem; /* テキストサイズをさらに小さく */
+    margin-bottom: 0.3rem;
 }
 
 .join-button {
-    padding: 0.3rem 0.6rem; /* ボタンサイズを調整 */
-    font-size: 0.6rem; /* ボタンのフォントサイズも調整 */
-}
-
-.join-button:hover {
-    background-color: #ffffff;
-    color: #303030;
+    padding: 0.2rem 0.4rem; /* ボタンサイズをさらに小さく */
+    font-size: 0.5rem; /* ボタンのフォントサイズも小さく */
 }
 
 
