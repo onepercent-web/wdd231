@@ -157,26 +157,55 @@ header {
 }
 
 
-.cta-button {
+
+
+
+
+.join-message {
     position: absolute;
-    bottom: 500px;
+    top: 50%; /* 画像の中央に配置 */
     left: 50%;
-    transform: translateX(90%);
-    background-color: #000000;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明に設定 */
     color: #ffffff;
-    padding: 15px 30px;
-    border-radius: 60px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px); /* 背景を少しぼかす効果 */
+}
+
+.join-message p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.join-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #008080;
+    color: #ffffff;
+    border-radius: 5px;
     text-decoration: none;
-    font-size: 1em;
-    white-space: nowrap;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
- 
-.cta-button:hover {
-    background-color: #ffffff;
-    color: #000000;
+
+.join-button:hover {
+    background-color: #004f4f;
 }
- 
+
+
+
+
+
+
+
+
+
 .cards-container {
     display: flex;
     justify-content: center;
@@ -436,13 +465,6 @@ footer p {
     }
  
     
-    .cta-button {
-        font-size: 0.5em;
-        padding: 10px 10px;
-        margin-bottom: 195px;
-       margin-left: 140px;
-    }
- 
  
     footer {
         padding: 20px;
@@ -482,6 +504,27 @@ footer p {
         padding: 10px 0;
         width: 100%;
     }
+
+
+
+    .join-message {
+        width: 90%; /* モバイルで幅を広げる */
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .join-message p {
+        font-size: 1rem;
+    }
+
+    .join-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+
+
+
 
 
 

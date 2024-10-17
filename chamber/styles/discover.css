@@ -449,8 +449,23 @@ figcaption {
     border-radius: 10px;
 }
 
+.gallery-image:hover {
+    transform: scale(1.1); /* 少しズームする */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* ホバー時にシャドウを強化 */
+    filter: brightness(1.1); /* 画像を少し明るくする */
+}
+
 figcaption {
     font-size: 0.9rem; /* Smaller caption text */
 }
+
+}
     
+/* ホバー効果をデスクトップビューのみに適用 */
+@media (min-width: 701px) {
+    .gallery-image:hover {
+        transform: scale(1.1); /* 少しズームする */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* ホバー時にシャドウを強化 */
+        filter: brightness(1.1); /* 画像を少し明るくする */
+    }
 }
