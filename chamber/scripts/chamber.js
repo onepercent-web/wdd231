@@ -7,10 +7,12 @@ window.onload = function() {
 // Toggle menu for mobile view
 document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.getElementById("menu");
-    const navLinks = document.querySelector(".nav-links");
-
+    const navigation = document.getElementById("navigation");
     menuButton.addEventListener("click", function () {
-        navLinks.classList.toggle("open"); // Toggle the 'open' class on click
+        const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
+        menuButton.setAttribute("aria-expanded", !isExpanded);
+        menuButton.classList.toggle("active");
+        navigation.classList.toggle("open");
     });
 
     // View Toggle Buttons - Add event listeners for Grid and List View buttons

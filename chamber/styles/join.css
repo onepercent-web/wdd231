@@ -659,11 +659,15 @@ footer p {
     .form-title {
         font-size: 1.2rem;
         text-align: center;
-        margin-bottom: 1rem;
     }
 
     .form-part {
         margin-bottom: 15px;
+    }
+
+    .level {
+        font-size: 1.2rem;
+        text-align: center;
     }
 
     label {
