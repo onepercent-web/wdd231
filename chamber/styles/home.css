@@ -513,23 +513,26 @@ footer p {
 /* Join message styling */
 
 .hero {
-    position: relative;
+    position: relative; /* 親要素に相対配置を設定 */
 }
 
 .join-message {
-    width: 70%; /* モバイルでさらに幅を小さく */
-    padding: 0.5rem; /* 内側のパディングも小さく */
+    width: 50%; /* 極小サイズに */
+    max-width: 120px; /* モバイルで最大幅を120pxに */
+    padding: 0.3rem; /* 内側のパディングを小さく */
+    top: 45%; /* 少し上に移動 */
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .join-message p {
-    font-size: 0.7rem; /* モバイル用にフォントサイズをさらに小さく */
+    font-size: 0.5rem; /* テキストサイズをさらに縮小 */
 }
 
 .join-button {
-    padding: 0.3rem 0.6rem; /* ボタンサイズをさらに小さく */
-    font-size: 0.6rem;
+    padding: 0.2rem 0.4rem; /* ボタンサイズをさらに小さく */
+    font-size: 0.5rem; /* ボタンのフォントサイズも縮小 */
 }
-
 
 
 
