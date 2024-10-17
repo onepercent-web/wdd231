@@ -517,21 +517,18 @@ footer p {
 }
 
 .join-message {
-    width: 80%; /* モバイルで少し幅を広げる */
-    padding: 0.6rem;
-    top: 45%; /* 少し位置を調整して中央に配置 */
-    transform: translate(-50%, -45%); /* 画像の中心位置に合わせる */
+    width: 70%; /* モバイルでさらに幅を小さく */
+    padding: 0.5rem; /* 内側のパディングも小さく */
 }
 
 .join-message p {
-    font-size: 0.8rem; /* モバイル用にフォントサイズを小さめに */
+    font-size: 0.7rem; /* モバイル用にフォントサイズをさらに小さく */
 }
 
 .join-button {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem; /* ボタンサイズをさらに小さく */
+    font-size: 0.6rem;
 }
-
 
 
 
