@@ -157,39 +157,36 @@ header {
 }
 
 
-
-
-
+/* Join message styling */
 
 .join-message {
     position: absolute;
-    top: 50%; /* 画像の中央に配置 */
+    top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明に設定 */
+    background-color: rgba(0, 0, 0, 0.5); 
     color: #ffffff;
-    padding: 1.5rem;
+    padding: 0.8rem; 
     border-radius: 8px;
-    width: 80%;
-    max-width: 500px;
+    width: 60%; 
+    max-width: 300px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px); /* 背景を少しぼかす効果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .join-message p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    font-size: 0.9rem; 
+    margin-bottom: 0.6rem;
 }
 
 .join-button {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
+    padding: 0.5rem 1rem;
     background-color: #008080;
     color: #ffffff;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.8rem; 
     font-weight: bold;
     transition: background-color 0.3s;
 }
@@ -197,6 +194,8 @@ header {
 .join-button:hover {
     background-color: #004f4f;
 }
+
+
 
 
 
@@ -331,9 +330,8 @@ header {
     padding: 1em; /* Adiciona um espaço interno */
 }
 
-
 .spotlight-section {
-    margin-top: 40px 0;
+    margin: 40px 0;
 }
  
 .business-card-container {
@@ -505,30 +503,6 @@ footer p {
         width: 100%;
     }
 
-
-
-    .join-message {
-        width: 90%; /* モバイルで幅を広げる */
-        padding: 1rem;
-        font-size: 1rem;
-    }
-
-    .join-message p {
-        font-size: 1rem;
-    }
-
-    .join-button {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.9rem;
-    }
-
-
-
-
-
-
-
-
     .card-container h1 {
         font-size: 20px 
     }
@@ -541,7 +515,23 @@ footer p {
     }
     
 
+/* Join message styling */
 
+.join-message {
+    width: 80%; 
+    padding: 0.6rem; 
+}
+
+.join-message p {
+    font-size: 0.8rem;
+}
+
+.join-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+}
+
+/* Main content styling */
 
     .weather-container {
         flex-direction: column; /* Alinha os cards verticalmente em telas pequenas */
