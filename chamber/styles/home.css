@@ -156,6 +156,12 @@ header {
     margin-bottom: 7%;
 }
 
+.cards-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
 
 /* Join message styling */
 
@@ -194,20 +200,8 @@ header {
 }
 
 
+/* Main content */
 
-
-
-
-
-
-
-
-
-.cards-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
 
 .weather-container {
     display: flex;
@@ -513,21 +507,34 @@ footer p {
     }
     
 
+
+
+
 /* Join message styling */
 
+.hero {
+    position: relative;
+}
+
 .join-message {
-    width: 80%; 
-    padding: 0.6rem; 
+    width: 80%; /* モバイルで少し幅を広げる */
+    padding: 0.6rem;
+    top: 45%; /* 少し位置を調整して中央に配置 */
+    transform: translate(-50%, -45%); /* 画像の中心位置に合わせる */
 }
 
 .join-message p {
-    font-size: 0.8rem;
+    font-size: 0.8rem; /* モバイル用にフォントサイズを小さめに */
 }
 
 .join-button {
     padding: 0.4rem 0.8rem;
     font-size: 0.7rem;
 }
+
+
+
+
 
 /* Main content styling */
 
