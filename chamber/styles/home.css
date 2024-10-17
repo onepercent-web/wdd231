@@ -114,7 +114,7 @@ header {
 .menu-icon {
     width: 35px;
     height: 4px;
-    background-color: #002c24;
+    background-color: #000000;
     transition: all 0.3s;
 }
  
@@ -172,18 +172,15 @@ header {
     max-width: 300px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.join-message p {
-    font-size: 0.9rem; 
-    margin-bottom: 0.6rem;
+    font-size: 15px; 
 }
 
 .join-button {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #008080;
-    color: #ffffff;
+    padding: 0.2rem 1rem;
+    margin: 2.5%;
+    background-color: #ffffff;
+    color: #303030;
     border-radius: 5px;
     text-decoration: none;
     font-size: 0.8rem; 
@@ -192,7 +189,8 @@ header {
 }
 
 .join-button:hover {
-    background-color: #004f4f;
+    background-color: #303030;
+    color: #ffffff;
 }
 
 

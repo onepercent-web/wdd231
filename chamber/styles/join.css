@@ -535,38 +535,6 @@ footer p {
 
 /* Responsive design */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 700px) {
     
     body {
@@ -661,157 +629,28 @@ footer p {
         padding: 1rem;
         margin: 2rem auto;
     }
-
-
-
-
-
-
-
-
-
-     /* form part */
-    .form-section,
-    .membership-card-section {
-        padding: 1rem;
-        border-radius: 5px;
-    }
-
-    .form-part {
-        margin-bottom: 10px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    textarea,
-    select {
-        padding: 1rem;
-        font-size: 1rem;
-    }
-
-    input[type="submit"] {
-        padding: 0.5rem;
-        font-size: 1rem;
-        height: auto;
-        margin-top: 10%;
-        margin-bottom: 2%;
-    }
-  
-    /* Show more bottom */
-
-    .info-link {
-        background-color: #ffffff; 
-        color: #303030; 
-        padding: 10px 20px;
-        border-radius: 10px;
-        text-decoration: none;
-        font-size: 0.8em;
-        transition: background-color 0.3s, color 0.3s;
-    }
     
-    .info-link:hover {
-        background-color: #ffffff;
-        color: #0037ff; 
-    }
-
-    /* Membership cards*/
-
-    .membership-cards {
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    .card {
-        margin-bottom: 20px;
-        padding: 10px;
-        font-size: 1rem;
+    /* Footer adjustments */
+    footer {
+        padding: 20px;
         text-align: center;
     }
-
-    .membership-card-section {
-        padding: 1rem;
+ 
+    footer p {
+        font-size: 0.9em;
     }
-
-    .membership-cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .membership-cards .card {
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 20px;
-        padding: 15px;
-        font-size: 16px;
-    }
-
-    .membership-cards h2 {
-        font-size: 1.2em;
-    }
-
-    /* Adjust modal content for smaller screens */
-
-
-     .modal {
-        width: 90%; 
-        max-width: 90%;
-        padding: 1rem;
-        border-radius: 5px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        overflow-y: auto; 
-        max-height: 80vh; 
-    }
-
-    .modal-content {
-        font-size: 0.9rem; 
-        line-height: 1.4;
-        padding: 1rem;
-    }
-
-    .modal-content h2 {
-        font-size: 1.1rem;
-        font-weight: bold;
-        color: #303030;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    .modal-content p,
-    .modal-content ul {
-        font-size: 0.9rem;
-        margin-bottom: 0.8rem;
-        color: #303030;
-    }
-
-    .modal-content ul {
-        padding-left: 1rem;
-    }
-
-    .close {
-        font-size: 1.2rem;
-        color: #303030;
-        position: absolute;
-        top: 5px;
-        right: 10px;
-        background: none;
-        border: none;
-        cursor: pointer;
+ 
+    .social img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
     }
 
 
 
 
 
-
-
-
-
-
-    /* Form section adjustments */
+    /* Form section　*/
     .form-section {
         padding: 1rem;
         margin: 0 auto;
@@ -884,30 +723,114 @@ footer p {
     }
 
 
+       /* Membership cards*/
 
+       .membership-cards {
+        flex-direction: column;
+        margin-left: 0;
+    }
 
-
-
-
-
-
-
-
-
-    
-    /* Footer adjustments */
-    footer {
-        padding: 20px;
+    .card {
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 1rem;
         text-align: center;
     }
- 
-    footer p {
-        font-size: 0.9em;
+
+    .membership-card-section {
+        padding: 1rem;
     }
- 
-    .social img {
-        width: 30px;
-        height: 30px;
-        margin: 5px;
+
+    .membership-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .membership-cards .card {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .membership-cards h2 {
+        font-size: 1.2em;
+    }
+
+      
+    /* Show more bottom */
+
+    .info-link {
+        background-color: #ffffff; 
+        color: #303030; 
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 0.8em;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .info-link:hover {
+        background-color: #ffffff;
+        color: #0037ff; 
+    }
+
+
+    /* Adjust modal content for smaller screens */
+
+    .modal {
+        width: 90%; 
+        max-width: 90%;
+        padding: 1rem;
+        border-radius: 8px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow-y: auto;
+        max-height: 80vh; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+    }
+
+    .modal-content {
+        padding: 1rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #303030;
+        text-align: left;
+    }
+
+    .modal-content h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #303030;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .modal-content p,
+    .modal-content ul {
+        font-size: 0.9rem;
+        margin: 0.5rem 0; 
+        color: #303030;
+    }
+
+    .modal-content ul {
+        padding-left: 1rem; 
+        list-style-type: disc;
+    }
+
+    .close {
+        font-size: 1.5rem;
+        color: #303030;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
 }
