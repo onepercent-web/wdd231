@@ -525,7 +525,7 @@ footer p {
     max-width: 300px; /* 最大幅を300pxに設定 */
     padding: 0.5rem; /* 内側のパディングを調整 */
     background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
-    border-radius: 6px;
+    border-radius: 7px;
     text-align: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
@@ -539,6 +539,12 @@ footer p {
     padding: 0.3rem 0.6rem; /* ボタンサイズを調整 */
     font-size: 0.6rem; /* ボタンのフォントサイズも調整 */
 }
+
+.join-button:hover {
+    background-color: #ffffff;
+    color: #303030;
+}
+
 
 /* Main content styling */
 
