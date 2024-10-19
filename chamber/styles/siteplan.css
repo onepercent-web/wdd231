@@ -57,12 +57,6 @@ section p {
 }
 
 /* Wireframe Image */
-.wireframe img {
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-
-}
 
 .wireframe p {
     font-family: "Merriweather", serif;
@@ -70,12 +64,12 @@ section p {
     color: #0037ff;
 }
 
-
 .size-change {
     width: 100%;
     max-width: 300px;
     object-fit: cover;
     margin-top: 10px;
+    border: 2px solid #303030; 
 }
 
 .size-change-desktop {
@@ -83,6 +77,7 @@ section p {
     max-width: 600px;
     object-fit: cover;
     margin-top: 10px;
+    border: 2px solid #303030; 
 }
 
 /* Footer Styles */
