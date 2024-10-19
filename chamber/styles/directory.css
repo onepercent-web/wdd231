@@ -217,13 +217,13 @@ header {
 
 
 .list-view a {
-    color: #0066cc;
+    color: #303030;
     text-decoration: none;
 }
 
 
 .list-view a:hover {
-    color: #0066cc;
+    color: #0037ff;
     text-decoration: underline;
 }
 
@@ -278,14 +278,14 @@ header {
 }
 
 .grid-view a {
-    color: #0066cc;
+    color: #303030;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.5em;
 }
 
 .grid-view a:hover {
-    color: #0066cc;
+    color: #0037ff;
     text-decoration: underline;
 }
 
