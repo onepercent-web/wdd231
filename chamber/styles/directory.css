@@ -17,6 +17,7 @@ body {
     line-height: 2.2;
     background-color: #EAEAEA;
     font-size: 25px;
+    font-family: "Commissioner", serif;
 }
 
 header {
@@ -31,8 +32,8 @@ header {
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Isso ajuda a empurrar os itens para as extremidades */
-    width: 100%; /* Garante que o container ocupe a largura total */
+    justify-content: space-between; 
+    width: 100%; 
 }
 
 
@@ -42,18 +43,18 @@ header {
     height: 40px;
 }
 
-.header-container h1 {
+.header-container h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
-.header-container h1:first-child {
+.header-container h2:first-child {
     font-weight: bold;
     font-size: 3.0rem;
 }
 
-.header-container h1:last-child {
+.header-container h2:last-child {
     font-weight: normal;
     font-size: 1.5rem;
 }
@@ -146,6 +147,7 @@ header {
     position: relative;
     margin: 20px 0;
     text-align: center;
+    font-family: "Merriweather", serif;
 }
  
 .hero img {
@@ -156,6 +158,9 @@ header {
     margin-bottom: 7%;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
 
  
 
@@ -215,11 +220,12 @@ header {
     font-weight: bold;
 }
 
-
 .list-view a {
     color: #303030;
     text-decoration: none;
 }
+
+.list-view
 
 
 .list-view a:hover {
@@ -284,10 +290,12 @@ header {
     font-size: 0.5em;
 }
 
+
 .grid-view a:hover {
     color: #0037ff;
     text-decoration: underline;
 }
+
 
 
 

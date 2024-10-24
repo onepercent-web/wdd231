@@ -35,18 +35,18 @@ header {
     height: 40px;
 }
 
-.header-container h1 {
+.header-container h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
-.header-container h1:first-child {
+.header-container h2:first-child {
     font-weight: bold;
     font-size: 3.0rem;
 }
 
-.header-container h1:last-child {
+.header-container h2:last-child {
     font-weight: normal;
     font-size: 1.5rem;
 }
@@ -127,11 +127,13 @@ body {
     line-height: 2.2;
     background-color: #ffffff;
     font-size: 25px;
+    font-family: "Commissioner", serif;
 }
  
 .hero {
     margin: 20px 0;
     text-align: center;
+    font-family: "Merriweather", serif;
 }
  
 .hero img {
@@ -142,7 +144,9 @@ body {
     margin-bottom: 7%;
 }
 
-
+h1 {
+    font-size: 2.5rem;
+}
 
 body {
     line-height: 2.2;
@@ -455,9 +459,9 @@ figcaption {
 }
 
 .gallery-image:hover {
-    transform: scale(1.1); /* 少しズームする */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* ホバー時にシャドウを強化 */
-    filter: brightness(1.1); /* 画像を少し明るくする */
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    filter: brightness(1.1); 
 }
 
 figcaption {
@@ -466,11 +470,10 @@ figcaption {
 
 }
     
-/* ホバー効果をデスクトップビューのみに適用 */
 @media (min-width: 701px) {
     .gallery-image:hover {
-        transform: scale(1.1); /* 少しズームする */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* ホバー時にシャドウを強化 */
-        filter: brightness(1.1); /* 画像を少し明るくする */
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        filter: brightness(1.1);
     }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tsukuba Chamber of Commerce Discover Page</title>
-    <meta name="description" content="WDD 231 - Chamber Discover Page ">
+    <meta name="description" content="WDD 231 - Discover Page">
     <meta name="author" content="Eimi Miyake">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -23,8 +23,8 @@
             <div class="header-container">
                 <img src="images/logo.webp" width="34" height="40" alt="tsukuba-view" loading="lazy">            
                 <div>
-                    <h1>Tsukuba</h1>
-                    <h1>chamber of commerce</h1>
+                    <h2>Tsukuba</h2>
+                    <p>chamber of commerce</p>
                 </div>
                 <button id="menu" class="menu-button" aria-expanded="false" aria-controls="navigation" aria-label="Toggle navigation">
                     <span class="menu-icon"></span>
@@ -33,7 +33,7 @@
                 </button>
                 <nav class="nav-links" id="navigation" aria-hidden="true">
                     <div class="box">
-                        <a href="home.html" tabindex="0">Home</a>
+                        <a href="index.html" tabindex="0">Home</a>
                     </div>
                     <div class="box">
                         <a href="directory.html" tabindex="0">Directory</a>
@@ -131,13 +131,13 @@
             <p id="lastModified"></p>
          
             <div class="social">
-                <a href="https://www.youtube.com" target="_blank">
-                    <img src="images/youtube.webp"youtube icon">
+                <a href="https://www.youtube.com" target="_blank" rel="noopener">
+                    <img src="images/youtube.webp" alt="youtube icon">
                 </a>
-                <a href="https://twitter.com" target="_blank">
+                <a href="https://twitter.com" target="_blank" rel="noopener">
                     <img src="images/twitter.webp" alt="twitter icon">
                 </a>
-                <a href="https://www.linkedin.com" target="_blank">
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener">
                     <img src="images/in.webp" alt="linkedin icon">
                 </a>
             </div>
@@ -145,8 +145,8 @@
         <script src="scripts/discover.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                const menuButton = document.getElementById(".menu-button");
-                const navigation = document.getElementById(".nav-links");
+                const menuButton = document.getElementById("menu-button");
+                const navigation = document.getElementById("nav-links");
                 menuButton.addEventListener("click", function () {
                     const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
                     menuButton.setAttribute("aria-expanded", !isExpanded);
@@ -155,7 +155,6 @@
                 });
             });
         </script>
+    </div>
 </body>
 </html>
- 
- 

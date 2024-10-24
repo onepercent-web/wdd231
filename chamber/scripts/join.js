@@ -101,3 +101,34 @@ document.addEventListener("DOMContentLoaded", function () {
         card.style.animation = `cardAnimation${index + 1} 2s ease-in-out forwards`;
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const modals = document.querySelectorAll('.modal');
+    console.log(modals); 
+    const openButtons = document.querySelectorAll('.info-link');
+    const closeButtons = document.querySelectorAll('.close');
+
+    // Open modal
+    openButtons.forEach((button) => {
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+            const modalId = this.getAttribute('data-modal');
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.showModal();
+            }
+        });
+    });
+
+    // Close modal
+    closeButtons.forEach((button) => {
+        button.addEventListener('click', function () {
+            const modalId = this.getAttribute('data-close');
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.close();
+            }
+        });
+    });
+});

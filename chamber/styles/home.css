@@ -17,6 +17,7 @@ body {
     line-height: 2.2;
     background-color: #EAEAEA;
     font-size: 25px;
+    font-family: "Commissioner", serif;
 }
 
 header {
@@ -31,8 +32,8 @@ header {
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Isso ajuda a empurrar os itens para as extremidades */
-    width: 100%; /* Garante que o container ocupe a largura total */
+    justify-content: space-between;
+    width: 100%;
 }
 
 
@@ -42,18 +43,18 @@ header {
     height: 40px;
 }
 
-.header-container h1 {
+.header-container h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
-.header-container h1:first-child {
+.header-container h2:first-child {
     font-weight: bold;
     font-size: 3.0rem;
 }
 
-.header-container h1:last-child {
+.header-container h2:last-child {
     font-weight: normal;
     font-size: 1.5rem;
 }
@@ -146,6 +147,8 @@ header {
     position: relative;
     margin: 20px 0;
     text-align: center;
+    font-family: "Merriweather", serif;
+
 }
  
 .hero img {
@@ -154,6 +157,10 @@ header {
 
 .hero h2 {
     margin-bottom: 7%;
+}
+
+h1 {
+    font-size: 2.5rem;
 }
 
 .cards-container {
@@ -210,12 +217,12 @@ header {
 }
 
 .card {
-    background-color: #FFF788;
+    background-color: #A0E4FF;
     border: 4px solid #000000;
     border-radius: 8px;
     padding: 10px;
     width: 48%;
-    max-width: 500px; /* Limita a largura máxima do card */
+    max-width: 500px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
 }
@@ -225,7 +232,7 @@ header {
 }
 
 .card-header {
-    background-color: #FFF788;
+    background-color: #A0E4FF;
     color: #000000;
     font-weight: bold;
     padding: 10px;
@@ -236,8 +243,9 @@ header {
     font-size: 45px;
 }
 
+
 .event-card {
-    background-color: #FFF788;
+    background-color: #A0E4FF;
     padding: 20px;
     border: 4px solid #000000;
     border-radius: 15px;
@@ -249,10 +257,10 @@ header {
     padding: 5%;
 }
 
-.event-list {
-    list-style-type: none;
+.event-item {
     padding: 10px;
 }
+
 
 .event-link {
     color: #000000;
@@ -263,18 +271,18 @@ header {
 }
 
 .weather-container .card {
-    width: 48%; /* Faz com que as seções de clima e previsão ocupem metade da largura */
+    width: 48%;
 }
 /* Weather Card Styling */
 .weather-card, .data.card, .weather.card {
-    background-color: #FFF788;
+    background-color: #A0E4FF;
     padding: 20px;
     border: 4px solid  #000000;
     border-radius: 15px;
     width: 100%;
-    max-width: 800px; /* Optional: adjust width based on your design */
-    margin: 20px; /* Space between cards */
-    font-size: 1.2em; /* Adjust as needed */
+    max-width: 800px; 
+    margin: 20px; 
+    font-size: 1.2em; 
     text-align: center;
     justify-content: space-between;
     flex: 1 1 100%;
@@ -296,7 +304,7 @@ header {
 .weather-icon {
     display: block;
     margin: 10px auto;
-    width: 80px; /* Adjust as needed */
+    width: 80px;
     height: auto;
 }
 
@@ -304,6 +312,10 @@ header {
     margin: 5px 0;
 }
  
+
+
+
+
 .weather {
     display: flex;
     flex-direction: column;
@@ -311,16 +323,16 @@ header {
     gap: 10px;
 }
 
-/* Se você quiser ajustar ainda mais os itens */
+
 .weather.card ul li{
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o padding da lista */
-    margin: 0; /* Remove a margem da lista */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
     display: flex;
-    flex-direction: column; /* Alinha os itens em uma coluna */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    text-align: center; /* Centraliza o texto */
-    padding: 1em; /* Adiciona um espaço interno */
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 1em; 
 }
 
 .spotlight-section {
@@ -507,45 +519,46 @@ footer p {
         font-size: 10px
     }
     
-
+    .card-header {
+        font-size: 15px;
 
 
 
 /* Join message styling */
 
 .hero {
-    position: relative; /* 親要素に対して相対位置を設定 */
+    position: relative; 
 }
 
 .join-message {
     position: absolute;
-    top: 15%; /* 上部に配置 */
+    top: 15%;
     left: 50%;
-    transform: translate(-50%, 0); /* 左右中央揃え */
-    width: 70%; /* 幅をさらに狭める */
-    max-width: 250px; /* 最大幅を250pxに設定 */
-    padding: 0.3rem; /* 内側のパディングを縮小 */
-    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    transform: translate(-50%, 0); 
+    width: 70%; 
+    max-width: 250px; 
+    padding: 0.3rem; 
+    background-color: rgba(0, 0, 0, 0.5); 
     border-radius: 6px;
     text-align: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .join-message p {
-    font-size: 0.6rem; /* テキストサイズをさらに小さく */
+    font-size: 0.6rem; 
     margin-bottom: 0.3rem;
 }
 
 .join-button {
-    padding: 0.2rem 0.4rem; /* ボタンサイズをさらに小さく */
-    font-size: 0.5rem; /* ボタンのフォントサイズも小さく */
+    padding: 0.2rem 0.4rem; 
+    font-size: 0.5rem; 
 }
 
 
 /* Main content styling */
 
     .weather-container {
-        flex-direction: column; /* Alinha os cards verticalmente em telas pequenas */
+        flex-direction: column;
         text-align: center;
         padding-right: 40px;
     }
@@ -557,12 +570,15 @@ footer p {
     }
 
     .weather-container .card {
-        width: 100%; /* Faz o card ocupar 100% da largura em telas pequenas */
-        margin-bottom: 20px; /* Adiciona espaçamento abaixo */
+        width: 100%; 
+        margin-bottom: 20px;
         font-size: 10px;
         text-align: center;
     }
 
+    .weather-content {
+        font-size: 10px;
+    }
 
     .spotlight-section {
         text-align: center;

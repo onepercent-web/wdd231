@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+function displayMembershipLevel(level) {
+    return `Membership Level: ${level}`; // 数字としてメンバーシップレベルを表示
+}
+
+
 // Fetch members from JSON file and display in both Grid and List views
 fetch('data/members.json')
     .then(response => response.json())
@@ -35,7 +40,8 @@ fetch('data/members.json')
         let listContainer = document.querySelector('.list-view tbody'); // List container
 
         data.forEach(member => {
-            // Add member to Grid View
+
+             // Add member to Grid View
             let gridItem = `
                 <div class="member-card">
                     <img src="${member.image}" alt="${member.name} logo">
@@ -43,6 +49,7 @@ fetch('data/members.json')
                     <p>${member.address}</p>
                     <p>${member.phone}</p>
                     <a href="${member.website}" target="_blank">${member.website}</a>
+                    <p>${displayMembershipLevel(member.membershipLevel)}</p>
                 </div>`;
             gridContainer.innerHTML += gridItem;
 
@@ -53,8 +60,11 @@ fetch('data/members.json')
                     <td>${member.address}</td>
                     <td>${member.phone}</td>
                     <td><a href="${member.website}" target="_blank">${member.website}</a></td>
-                </tr>`;
+                    <td>${displayMembershipLevel(member.membershipLevel)}</td>
+                    </tr>`;
             listContainer.innerHTML += listItem;
         });
     })
     .catch(error => console.error('Error fetching the data:', error));
+
+    
