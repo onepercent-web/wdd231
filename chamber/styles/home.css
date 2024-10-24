@@ -429,9 +429,11 @@ footer p {
     color: rgb(0, 0, 0);
 }
  
+
 /* Responsive design */
 @media (max-width: 700px) {
     
+     
     body {
         text-align: center;
     }
@@ -468,6 +470,13 @@ footer p {
     }
  
     
+    .cta-button {
+        font-size: 0.5em;
+        padding: 10px 10px;
+        margin-bottom: 195px;
+       margin-left: 140px;
+    }
+ 
  
     footer {
         padding: 20px;
@@ -508,6 +517,7 @@ footer p {
         width: 100%;
     }
 
+
     .card-container h1 {
         font-size: 20px 
     }
@@ -518,11 +528,11 @@ footer p {
     .cards-container {
         font-size: 10px
     }
+
     
     .card-header {
         font-size: 15px;
-
-
+    }
 
 /* Join message styling */
 
@@ -611,5 +621,4 @@ footer p {
       width: 100%;
       margin-bottom: 20px;
     }
- 
 }
