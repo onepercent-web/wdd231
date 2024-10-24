@@ -288,6 +288,23 @@ h1 {
     flex: 1 1 100%;
 }
  
+
+.weather-card, .data.card, .weather.card {
+    background-color: #A0E4FF;
+    padding: 20px;
+    border: 4px solid  #000000;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 800px; 
+    margin: 20px; 
+    font-size: 1.2em; 
+    text-align: center;
+    justify-content: space-between;
+    flex: 1 1 100%;
+}
+
+
+
 /* List Styling for Weather Details */
 .weather-content ul, .weather ul {
     list-style-type: none;
