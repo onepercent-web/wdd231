@@ -522,7 +522,7 @@ footer p {
         font-size: 15px 
     }
     .cards-container {
-        font-size: 10px
+        font-size: 10px;
     }
 
     
@@ -563,10 +563,10 @@ footer p {
 
 /* Main content styling */
 
-    .event-card  {
+    .event-card, .weather-card, .weather-card2 {
     font-size: 12px;
-    padding: 15px;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
     .weather-container {
@@ -574,20 +574,6 @@ footer p {
         text-align: center;
         padding-right: 40px;
     }
-
-    .weather-card {
-        font-size: 12px;
-        padding: 15px;
-        text-align: center;
-    }
-
-    .weather-card2 {
-        font-size: 12px;
-        padding: 15px;
-        text-align: center;
-    }
-
-
 
     .weather-container .card {
         width: 100%; 
