@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function displayMembershipLevel(level) {
-    return `Membership Level: ${level}`; // 数字としてメンバーシップレベルを表示
+    return `Membership Level: ${level}`; 
 }
 
 
